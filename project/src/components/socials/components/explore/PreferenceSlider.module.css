@@ -1,0 +1,25 @@
+/* Slider base styles */
+.slider {
+  @apply w-full h-1 bg-zinc-800 rounded-full appearance-none cursor-pointer;
+}
+
+/* Webkit specific styles */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgb(244,244,245);
+  cursor: pointer;
+  border: 2px solid rgb(39,39,42);
+  transition: all 0.2s ease;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  background: rgb(255,255,255);
+}
+
+.slider:focus {
+  outline: none;
+}

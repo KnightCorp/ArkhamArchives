@@ -1,0 +1,24 @@
+[
+  {
+    "filename": "Demo Teacher_LLM_849e63a2-cc6f-4e24-a4bc-c48453362104.pdf",
+    "original_filename": "LLM_Theory.pdf",
+    "path": "lms_uploads\\notes\\Demo Teacher_LLM_849e63a2-cc6f-4e24-a4bc-c48453362104.pdf",
+    "public_url": "http://localhost:8000/lms/public/notes/Demo Teacher_LLM_849e63a2-cc6f-4e24-a4bc-c48453362104.pdf",
+    "teacher": "Demo Teacher",
+    "course": "LLM",
+    "description": "Class notes upload",
+    "uploaded_at": "2025-07-18T17:03:19.204317",
+    "uuid": "849e63a2-cc6f-4e24-a4bc-c48453362104"
+  },
+  {
+    "filename": "Demo Teacher_ml_7ab0b56d-33da-4cf9-8410-9d4420072e39.pdf",
+    "original_filename": "MACHINE LEARNING(R17A0534).pdf",
+    "path": "lms_uploads\\notes\\Demo Teacher_ml_7ab0b56d-33da-4cf9-8410-9d4420072e39.pdf",
+    "public_url": "http://localhost:8000/lms/public/notes/Demo Teacher_ml_7ab0b56d-33da-4cf9-8410-9d4420072e39.pdf",
+    "teacher": "Demo Teacher",
+    "course": "ml",
+    "description": "Class notes upload",
+    "uploaded_at": "2025-07-19T05:32:40.941113",
+    "uuid": "7ab0b56d-33da-4cf9-8410-9d4420072e39"
+  }
+]

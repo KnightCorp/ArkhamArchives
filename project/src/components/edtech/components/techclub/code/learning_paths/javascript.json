@@ -1,0 +1,317 @@
+[
+  {
+    "title": "Your First JavaScript Program",
+    "instructions": "Write a JavaScript program that prints 'Hello, World!' to the console. Use console.log() function.",
+    "hint": "console.log('Hello, World!');"
+  },
+  {
+    "title": "Variables and Basic Data Types",
+    "instructions": "Create variables for different data types: a number (age = 25), a string (name = 'Alice'), a boolean (isStudent = true), and an undefined variable. Print each variable.",
+    "hint": "let age = 25; let name = 'Alice'; let isStudent = true; let undefinedVar; console.log(age, name, isStudent, undefinedVar);"
+  },
+  {
+    "title": "String Operations and Methods",
+    "instructions": "Create a string 'hello world' and demonstrate: converting to uppercase, getting length, splitting into words, replacing 'world' with 'javascript', and checking if it includes 'hello'.",
+    "hint": "let text = 'hello world'; console.log(text.toUpperCase(), text.length, text.split(' '), text.replace('world', 'javascript'), text.includes('hello'));"
+  },
+  {
+    "title": "Template Literals and String Interpolation",
+    "instructions": "Create variables for name and age, then use template literals to print 'Hello [name], you are [age] years old'.",
+    "hint": "let name = 'Alice'; let age = 25; console.log(`Hello ${name}, you are ${age} years old`);"
+  },
+  {
+    "title": "Arithmetic Operations and Math Object",
+    "instructions": "Perform basic arithmetic: addition, subtraction, multiplication, division, modulo, and exponentiation. Also use Math object for sqrt(), pow(), round(), and random().",
+    "hint": "let a = 10, b = 3; console.log(a+b, a-b, a*b, a/b, a%b, a**b); console.log(Math.sqrt(a), Math.pow(a, b), Math.round(3.6), Math.random());"
+  },
+  {
+    "title": "Arrays - Creation and Basic Operations",
+    "instructions": "Create an array with numbers 1-5. Add 6 to the end, add 0 to the beginning, remove the element at index 2, and print the array. Also demonstrate length, indexOf(), and includes().",
+    "hint": "let numbers = [1,2,3,4,5]; numbers.push(6); numbers.unshift(0); numbers.splice(2, 1); console.log(numbers, numbers.length, numbers.indexOf(4), numbers.includes(3));"
+  },
+  {
+    "title": "Array Methods - map, filter, reduce",
+    "instructions": "Create an array of numbers 1-10. Use map() to double each number, filter() to get even numbers, and reduce() to sum all numbers.",
+    "hint": "let nums = [1,2,3,4,5,6,7,8,9,10]; let doubled = nums.map(x => x*2); let evens = nums.filter(x => x%2 === 0); let sum = nums.reduce((acc, curr) => acc + curr, 0);"
+  },
+  {
+    "title": "Array Destructuring and Spread Operator",
+    "instructions": "Create an array with 5 elements. Use destructuring to extract first, second, and rest elements. Use spread operator to combine two arrays.",
+    "hint": "let arr = [1,2,3,4,5]; let [first, second, ...rest] = arr; let arr2 = [6,7,8]; let combined = [...arr, ...arr2];"
+  },
+  {
+    "title": "Objects - Creation and Access",
+    "instructions": "Create an object for a person with properties 'name', 'age', 'city'. Add 'email' property, update age, and demonstrate bracket notation access.",
+    "hint": "let person = {name: 'Alice', age: 25, city: 'NYC'}; person.email = 'alice@email.com'; person.age = 26; console.log(person['name'], person.name);"
+  },
+  {
+    "title": "Object Methods and Iteration",
+    "instructions": "Iterate through object keys, values, and entries. Use Object.keys(), Object.values(), Object.entries() and demonstrate hasOwnProperty().",
+    "hint": "for(let key of Object.keys(person)) console.log(key); for(let value of Object.values(person)) console.log(value); for(let [key, value] of Object.entries(person)) console.log(key, value);"
+  },
+  {
+    "title": "Object Destructuring and Spread",
+    "instructions": "Destructure an object to extract specific properties. Use object spread to create a new object with additional properties.",
+    "hint": "let {name, age} = person; let newPerson = {...person, country: 'USA', phone: '123-456-7890'};"
+  },
+  {
+    "title": "If-Else Statements and Comparison",
+    "instructions": "Write a program that checks if a number is positive, negative, or zero. Also check if it's even or odd. Use if, else if, and else statements.",
+    "hint": "let num = 15; if(num > 0) console.log('Positive'); else if(num < 0) console.log('Negative'); else console.log('Zero'); if(num % 2 === 0) console.log('Even'); else console.log('Odd');"
+  },
+  {
+    "title": "Logical Operators and Complex Conditions",
+    "instructions": "Check if a number is between 10 and 50, or if it's divisible by both 3 and 5. Use &&, ||, and ! operators.",
+    "hint": "let num = 15; console.log(num >= 10 && num <= 50); console.log(num % 3 === 0 && num % 5 === 0);"
+  },
+  {
+    "title": "For Loops - Different Types",
+    "instructions": "Use for loop to print numbers 1-10, for...of loop to iterate through an array, and for...in loop to iterate through object properties.",
+    "hint": "for(let i = 1; i <= 10; i++) console.log(i); for(let item of [1,2,3,4,5]) console.log(item); for(let prop in person) console.log(prop, person[prop]);"
+  },
+  {
+    "title": "While and Do-While Loops",
+    "instructions": "Use while loop to find first number divisible by 7. Use do-while loop to print numbers 1-5.",
+    "hint": "let num = 1; while(num % 7 !== 0) num++; let i = 1; do { console.log(i); i++; } while(i <= 5);"
+  },
+  {
+    "title": "Basic Functions - Declaration and Expression",
+    "instructions": "Define a function greet() that takes a name parameter and returns a greeting string. Also create a function expression.",
+    "hint": "function greet(name) { return `Hello, ${name}!`; } let greetFunc = function(name) { return `Hi, ${name}!`; };"
+  },
+  {
+    "title": "Arrow Functions and Default Parameters",
+    "instructions": "Rewrite the greet function as an arrow function with default parameter. Create a function that takes multiple parameters with defaults.",
+    "hint": "let greet = (name = 'World') => `Hello, ${name}!`; let calculateArea = (length, width = 1) => length * width;"
+  },
+  {
+    "title": "Rest Parameters and Arguments Object",
+    "instructions": "Create a function that takes arbitrary number of arguments using rest parameters. Also demonstrate the arguments object.",
+    "hint": "let sum = (...numbers) => numbers.reduce((acc, curr) => acc + curr, 0); function oldStyle() { return Array.from(arguments).reduce((acc, curr) => acc + curr, 0); }"
+  },
+  {
+    "title": "Higher-Order Functions and Callbacks",
+    "instructions": "Create a function that takes another function as parameter and calls it. Use it with different callback functions.",
+    "hint": "let processData = (data, callback) => callback(data); processData([1,2,3], arr => arr.map(x => x*2));"
+  },
+  {
+    "title": "Closures and Lexical Scoping",
+    "instructions": "Create a function that returns another function which has access to variables from the outer function scope.",
+    "hint": "function makeCounter() { let count = 0; return function() { return ++count; }; } let counter = makeCounter();"
+  },
+  {
+    "title": "Classes - Basic Definition",
+    "instructions": "Define a class Person with constructor, properties, and methods. Create an object and call its methods.",
+    "hint": "class Person { constructor(name, age) { this.name = name; this.age = age; } introduce() { return `I am ${this.name}, ${this.age} years old`; } }"
+  },
+  {
+    "title": "Inheritance and Method Overriding",
+    "instructions": "Create a Student class that extends Person. Add grade property and override introduce() method to include grade.",
+    "hint": "class Student extends Person { constructor(name, age, grade) { super(name, age); this.grade = grade; } introduce() { return `${super.introduce()}, grade ${this.grade}`; } }"
+  },
+  {
+    "title": "Static Methods and Getters/Setters",
+    "instructions": "Add static method to Person class and create getter/setter for age property with validation.",
+    "hint": "static createAdult(name) { return new Person(name, 18); } get age() { return this._age; } set age(value) { if(value < 0) throw new Error('Age cannot be negative'); this._age = value; }"
+  },
+  {
+    "title": "Private Fields and Methods",
+    "instructions": "Use private fields (#) in a class to create truly private properties and methods.",
+    "hint": "class BankAccount { #balance = 0; #pin; constructor(pin) { this.#pin = pin; } #validatePin(inputPin) { return this.#pin === inputPin; } }"
+  },
+  {
+    "title": "Promises - Basic Usage",
+    "instructions": "Create a Promise that resolves after 1 second with a message. Handle it with .then() and .catch().",
+    "hint": "let myPromise = new Promise((resolve, reject) => { setTimeout(() => resolve('Success!'), 1000); }); myPromise.then(result => console.log(result)).catch(error => console.error(error));"
+  },
+  {
+    "title": "Async/Await Syntax",
+    "instructions": "Create an async function that simulates fetching data and use await to handle the Promise.",
+    "hint": "async function fetchData() { try { const response = await new Promise(resolve => setTimeout(() => resolve('Data fetched!'), 1000)); console.log(response); } catch(error) { console.error(error); } }"
+  },
+  {
+    "title": "Error Handling with Try-Catch",
+    "instructions": "Write a program that divides two numbers and handles division by zero and invalid input errors.",
+    "hint": "try { let a = 10, b = 0; if(b === 0) throw new Error('Division by zero'); console.log(a / b); } catch(error) { console.error('Error:', error.message); }"
+  },
+  {
+    "title": "Custom Error Classes",
+    "instructions": "Create a custom error class that extends Error. Use it to throw specific errors.",
+    "hint": "class ValidationError extends Error { constructor(message, field) { super(message); this.field = field; this.name = 'ValidationError'; } }"
+  },
+  {
+    "title": "Modules - Import and Export",
+    "instructions": "Create a module with functions and export them. Import and use them in another file.",
+    "hint": "// math.js: export function add(a, b) { return a + b; } export const PI = 3.14159; // main.js: import { add, PI } from './math.js';"
+  },
+  {
+    "title": "Default Exports and Namespace Imports",
+    "instructions": "Use default exports and import entire modules as namespaces.",
+    "hint": "// utils.js: export default function helper() { return 'help'; } // main.js: import helper, * as utils from './utils.js';"
+  },
+  {
+    "title": "Generators and Yield",
+    "instructions": "Create a generator function that yields Fibonacci numbers. Use it in a for...of loop.",
+    "hint": "function* fibonacci() { let a = 0, b = 1; while(true) { yield a; [a, b] = [b, a + b]; } } for(let num of fibonacci()) { if(num > 100) break; console.log(num); }"
+  },
+  {
+    "title": "Iterators and Custom Iterables",
+    "instructions": "Create a custom iterable object that implements the iterator protocol.",
+    "hint": "let range = { from: 1, to: 5, [Symbol.iterator]() { return { current: this.from, last: this.to, next() { if(this.current <= this.last) { return {done: false, value: this.current++}; } return {done: true}; } }; } };"
+  },
+  {
+    "title": "Proxy and Reflect",
+    "instructions": "Create a Proxy to intercept property access and modification. Use Reflect to call methods.",
+    "hint": "let target = {}; let proxy = new Proxy(target, { get(obj, prop) { console.log(`Getting ${prop}`); return Reflect.get(obj, prop); }, set(obj, prop, value) { console.log(`Setting ${prop} to ${value}`); return Reflect.set(obj, prop, value); } });"
+  },
+  {
+    "title": "Symbols and Well-Known Symbols",
+    "instructions": "Create custom symbols and use well-known symbols like Symbol.iterator and Symbol.toStringTag.",
+    "hint": "let mySymbol = Symbol('description'); let obj = { [Symbol.toStringTag]: 'MyObject', [Symbol.iterator]: function*() { yield 1; yield 2; yield 3; } };"
+  },
+  {
+    "title": "WeakMap and WeakSet",
+    "instructions": "Use WeakMap to store object metadata and WeakSet to track object usage without preventing garbage collection.",
+    "hint": "let weakMap = new WeakMap(); let obj = {}; weakMap.set(obj, 'metadata'); let weakSet = new WeakSet(); weakSet.add(obj);"
+  },
+  {
+    "title": "Map and Set Data Structures",
+    "instructions": "Use Map to store key-value pairs and Set to store unique values. Demonstrate their methods.",
+    "hint": "let map = new Map(); map.set('key', 'value'); let set = new Set([1,2,2,3,3,4]); console.log(set.size); // 4"
+  },
+  {
+    "title": "Template Literals and Tagged Templates",
+    "instructions": "Create a tagged template function that processes template literals and returns modified string.",
+    "hint": "function highlight(strings, ...values) { return strings.reduce((result, str, i) => result + str + (values[i] ? `<span class='highlight'>${values[i]}</span>` : ''), ''); } let result = highlight`Hello ${name}, you are ${age} years old`;"
+  },
+  {
+    "title": "Destructuring Assignment - Advanced",
+    "instructions": "Use nested destructuring for objects and arrays. Set default values and rename variables.",
+    "hint": "let {user: {name: userName, age}, settings: {theme = 'dark'}} = {user: {name: 'Alice', age: 25}, settings: {}};"
+  },
+  {
+    "title": "Optional Chaining and Nullish Coalescing",
+    "instructions": "Use optional chaining (?.) to safely access nested properties and nullish coalescing (??) for default values.",
+    "hint": "let user = {profile: {name: 'Alice'}}; let name = user?.profile?.name ?? 'Unknown'; let value = null ?? 'default';"
+  },
+  {
+    "title": "Logical Assignment Operators",
+    "instructions": "Use logical assignment operators (&&=, ||=, ??=) to conditionally assign values.",
+    "hint": "let user = {}; user.name ||= 'Anonymous'; user.settings ??= {theme: 'dark'}; user.isAdmin &&= true;"
+  },
+  {
+    "title": "BigInt and Numeric Separators",
+    "instructions": "Use BigInt for large numbers and numeric separators for readability.",
+    "hint": "let bigNumber = 123_456_789n; let readableNumber = 1_000_000; let result = bigNumber + 1n;"
+  },
+  {
+    "title": "Array Methods - Advanced",
+    "instructions": "Use flatMap(), find(), findIndex(), some(), every(), and includes() with arrays.",
+    "hint": "let arr = [1,2,3,4,5]; let hasEven = arr.some(x => x % 2 === 0); let allPositive = arr.every(x => x > 0); let found = arr.find(x => x > 3);"
+  },
+  {
+    "title": "Object Methods - Advanced",
+    "instructions": "Use Object.assign(), Object.create(), Object.freeze(), and Object.seal() for object manipulation.",
+    "hint": "let obj1 = {a: 1}; let obj2 = {b: 2}; let combined = Object.assign({}, obj1, obj2); let frozen = Object.freeze({x: 1});"
+  },
+  {
+    "title": "Function Methods - call, apply, bind",
+    "instructions": "Use call(), apply(), and bind() to control function context and parameters.",
+    "hint": "function greet() { return `Hello, ${this.name}!`; } let person = {name: 'Alice'}; let boundGreet = greet.bind(person); let result = greet.call(person);"
+  },
+  {
+    "title": "Memoization and Caching",
+    "instructions": "Create a memoization function that caches function results to improve performance.",
+    "hint": "function memoize(fn) { const cache = new Map(); return function(...args) { const key = JSON.stringify(args); if(cache.has(key)) return cache.get(key); const result = fn.apply(this, args); cache.set(key, result); return result; }; }"
+  },
+  {
+    "title": "Currying and Partial Application",
+    "instructions": "Create a curried function and demonstrate partial application.",
+    "hint": "let add = a => b => a + b; let add5 = add(5); let result = add5(3); // 8"
+  },
+  {
+    "title": "Composition and Pipeline",
+    "instructions": "Create utility functions for function composition and pipeline operations.",
+    "hint": "let compose = (...fns) => x => fns.reduceRight((acc, fn) => fn(acc), x); let pipe = (...fns) => x => fns.reduce((acc, fn) => fn(acc), x);"
+  },
+  {
+    "title": "Event Emitters and Custom Events",
+    "instructions": "Create a custom event emitter class and demonstrate event-driven programming.",
+    "hint": "class EventEmitter { constructor() { this.events = {}; } on(event, callback) { if(!this.events[event]) this.events[event] = []; this.events[event].push(callback); } emit(event, data) { if(this.events[event]) this.events[event].forEach(callback => callback(data)); } }"
+  },
+  {
+    "title": "File System Operations",
+    "instructions": "Use Node.js fs module to read and write files. Handle file operations asynchronously.",
+    "hint": "const fs = require('fs'); fs.writeFileSync('test.txt', 'Hello File!'); const content = fs.readFileSync('test.txt', 'utf8'); console.log(content);"
+  },
+  {
+    "title": "Path and URL Manipulation",
+    "instructions": "Use Node.js path and url modules to manipulate file paths and URLs.",
+    "hint": "const path = require('path'); const url = require('url'); console.log(path.join('folder', 'file.txt')); console.log(path.extname('file.txt'));"
+  },
+  {
+    "title": "Process and Environment Variables",
+    "instructions": "Access command line arguments and environment variables using process object.",
+    "hint": "console.log('Arguments:', process.argv); console.log('Environment:', process.env.NODE_ENV); process.exit(0);"
+  },
+  {
+    "title": "Buffer and Streams",
+    "instructions": "Work with binary data using Buffer and create readable/writable streams.",
+    "hint": "const buffer = Buffer.from('Hello World'); console.log(buffer.toString()); const { Readable } = require('stream');"
+  },
+  {
+    "title": "Child Processes",
+    "instructions": "Spawn child processes and communicate with them using Node.js child_process module.",
+    "hint": "const { spawn } = require('child_process'); const child = spawn('ls', ['-la']); child.stdout.on('data', (data) => { console.log(data.toString()); });"
+  },
+  {
+    "title": "Crypto Module",
+    "instructions": "Use Node.js crypto module for hashing, encryption, and random number generation.",
+    "hint": "const crypto = require('crypto'); const hash = crypto.createHash('sha256').update('hello').digest('hex'); const randomBytes = crypto.randomBytes(16);"
+  },
+  {
+    "title": "Zlib Compression",
+    "instructions": "Use Node.js zlib module for data compression and decompression.",
+    "hint": "const zlib = require('zlib'); const input = 'Hello World'; zlib.gzip(input, (err, buffer) => { if (!err) console.log(buffer.toString('base64')); });"
+  },
+  {
+    "title": "Readline Interface",
+    "instructions": "Create interactive command-line interfaces using Node.js readline module.",
+    "hint": "const readline = require('readline'); const rl = readline.createInterface({ input: process.stdin, output: process.stdout }); rl.question('What is your name? ', (name) => { console.log(`Hello, ${name}!`); rl.close(); });"
+  },
+  {
+    "title": "Timers and Scheduling",
+    "instructions": "Use setTimeout, setInterval, and clearTimeout for scheduling and timing operations.",
+    "hint": "setTimeout(() => console.log('Delayed message'), 1000); const interval = setInterval(() => console.log('Repeating'), 2000); setTimeout(() => clearInterval(interval), 10000);"
+  },
+  {
+    "title": "Error Handling Patterns",
+    "instructions": "Implement proper error handling patterns for Node.js applications.",
+    "hint": "process.on('uncaughtException', (err) => { console.error('Uncaught Exception:', err); process.exit(1); }); process.on('unhandledRejection', (reason, promise) => { console.error('Unhandled Rejection:', reason); });"
+  },
+  {
+    "title": "Memory Management and Garbage Collection",
+    "instructions": "Demonstrate memory leaks and proper cleanup in Node.js applications.",
+    "hint": "// Memory leak example: let elements = []; function addElement() { let div = { data: new Array(1000).fill('x') }; elements.push(div); // Memory leak - elements array keeps growing } // Proper cleanup: function cleanup() { elements = []; }"
+  },
+  {
+    "title": "Performance Optimization Techniques",
+    "instructions": "Implement various performance optimization techniques including debouncing, throttling, and caching.",
+    "hint": "function debounce(func, wait) { let timeout; return function executedFunction(...args) { const later = () => { clearTimeout(timeout); func(...args); }; clearTimeout(timeout); timeout = setTimeout(later, wait); }; }"
+  },
+  {
+    "title": "Security Best Practices",
+    "instructions": "Implement security measures including input validation, sanitization, and secure coding practices.",
+    "hint": "function sanitizeInput(input) { return input.replace(/[<>\"']/g, ''); } function validateEmail(email) { return /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email); }"
+  },
+  {
+    "title": "Testing and Debugging Advanced",
+    "instructions": "Create comprehensive unit tests and implement advanced debugging techniques.",
+    "hint": "function assert(condition, message) { if(!condition) throw new Error(message); } function debug(label, value) { console.log(`[DEBUG] ${label}:`, value); return value; }"
+  },
+  {
+    "title": "Advanced JavaScript Features and Best Practices",
+    "instructions": "Implement advanced JavaScript features and follow best practices for modern JavaScript development.",
+    "hint": "// Use const and let instead of var\n// Use template literals for string interpolation\n// Use destructuring for cleaner code\n// Use arrow functions for short functions\n// Use async/await instead of callbacks\n// Use modules for code organization\n// Use proper error handling\n// Use TypeScript for type safety"
+  }
+] 

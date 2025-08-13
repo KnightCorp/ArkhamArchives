@@ -1,0 +1,382 @@
+[
+  {
+    "title": "Your First C++ Program",
+    "instructions": "Write a C++ program that prints 'Hello, World!' to the console. Use std::cout and include necessary headers.",
+    "hint": "#include <iostream>\nint main() { std::cout << \"Hello, World!\" << std::endl; return 0; }"
+  },
+  {
+    "title": "Variables and Basic Data Types",
+    "instructions": "Create variables for different data types: an int (age = 25), a double (height = 5.9), a string (name = 'Alice'), a bool (isStudent = true), and a char (grade = 'A'). Print each variable.",
+    "hint": "#include <string>\nint age = 25; double height = 5.9; std::string name = \"Alice\"; bool isStudent = true; char grade = 'A'; std::cout << age << \" \" << height << \" \" << name << \" \" << isStudent << \" \" << grade << std::endl;"
+  },
+  {
+    "title": "String Operations and Methods",
+    "instructions": "Create a string 'hello world' and demonstrate: converting to uppercase, getting length, finding substrings, replacing 'world' with 'cpp', and checking if it contains 'hello'.",
+    "hint": "#include <algorithm>\nstd::string text = \"hello world\"; std::transform(text.begin(), text.end(), text.begin(), ::toupper); std::cout << text << \" \" << text.length() << \" \" << text.find(\"world\") << std::endl;"
+  },
+  {
+    "title": "Input and Type Conversion",
+    "instructions": "Ask the user for their name and age using std::cin. Convert age to integer. Print a message like 'Hello [name], you are [age] years old'.",
+    "hint": "std::string name; int age; std::cout << \"Enter your name: \"; std::getline(std::cin, name); std::cout << \"Enter your age: \"; std::cin >> age; std::cout << \"Hello \" << name << \", you are \" << age << \" years old\" << std::endl;"
+  },
+  {
+    "title": "Arithmetic Operations and Math",
+    "instructions": "Perform basic arithmetic: addition, subtraction, multiplication, division, modulo, and exponentiation. Also use cmath for sqrt(), pow(), round(), and random numbers.",
+    "hint": "#include <cmath>\n#include <cstdlib>\nint a = 10, b = 3; std::cout << a+b << \" \" << a-b << \" \" << a*b << \" \" << a/b << \" \" << a%b << \" \" << pow(a, b) << std::endl; std::cout << sqrt(a) << \" \" << round(3.6) << \" \" << rand() % 100 << std::endl;"
+  },
+  {
+    "title": "Arrays - Creation and Basic Operations",
+    "instructions": "Create an array with numbers 1-5. Print all elements using a loop. Also demonstrate array size and finding max/min values.",
+    "hint": "int numbers[] = {1,2,3,4,5}; int size = sizeof(numbers)/sizeof(numbers[0]); for(int i = 0; i < size; i++) std::cout << numbers[i] << \" \"; std::cout << std::endl;"
+  },
+  {
+    "title": "Vectors - Dynamic Arrays",
+    "instructions": "Create a std::vector of integers, add elements, remove elements, and demonstrate various vector methods.",
+    "hint": "#include <vector>\nstd::vector<int> vec = {1,2,3,4,5}; vec.push_back(6); vec.pop_back(); std::cout << \"Size: \" << vec.size() << \" Capacity: \" << vec.capacity() << std::endl;"
+  },
+  {
+    "title": "Iterators and Range-based For Loops",
+    "instructions": "Use iterators to traverse containers and range-based for loops for cleaner iteration.",
+    "hint": "for(auto it = vec.begin(); it != vec.end(); ++it) std::cout << *it << \" \"; for(const auto& element : vec) std::cout << element << \" \";"
+  },
+  {
+    "title": "Maps and Sets",
+    "instructions": "Create a std::map with string keys and int values. Also create a std::set for unique elements.",
+    "hint": "#include <map>\n#include <set>\nstd::map<std::string, int> person; person[\"age\"] = 25; person[\"score\"] = 95; std::set<int> uniqueNumbers = {1,2,2,3,3,4}; // automatically removes duplicates"
+  },
+  {
+    "title": "If-Else Statements and Comparison",
+    "instructions": "Write a program that checks if a number is positive, negative, or zero. Also check if it's even or odd. Use if, else if, and else statements.",
+    "hint": "int num = 15; if(num > 0) std::cout << \"Positive\" << std::endl; else if(num < 0) std::cout << \"Negative\" << std::endl; else std::cout << \"Zero\" << std::endl; if(num % 2 == 0) std::cout << \"Even\" << std::endl; else std::cout << \"Odd\" << std::endl;"
+  },
+  {
+    "title": "Logical Operators and Complex Conditions",
+    "instructions": "Check if a number is between 10 and 50, or if it's divisible by both 3 and 5. Use &&, ||, and ! operators.",
+    "hint": "int num = 15; std::cout << (num >= 10 && num <= 50) << std::endl; std::cout << (num % 3 == 0 && num % 5 == 0) << std::endl;"
+  },
+  {
+    "title": "For Loops - Different Types",
+    "instructions": "Use traditional for loop to print numbers 1-10, range-based for loop to iterate through a vector, and for_each algorithm.",
+    "hint": "#include <algorithm>\nfor(int i = 1; i <= 10; i++) std::cout << i << \" \"; for(const auto& num : vec) std::cout << num << \" \"; std::for_each(vec.begin(), vec.end(), [](int n) { std::cout << n << \" \"; });"
+  },
+  {
+    "title": "While and Do-While Loops",
+    "instructions": "Use while loop to find first number divisible by 7. Use do-while loop to print numbers 1-5.",
+    "hint": "int num = 1; while(num % 7 != 0) num++; int i = 1; do { std::cout << i << \" \"; i++; } while(i <= 5);"
+  },
+  {
+    "title": "Basic Functions - Definition and Call",
+    "instructions": "Define a function greet() that takes a string parameter and returns a greeting string. Call it with different names.",
+    "hint": "std::string greet(const std::string& name) { return \"Hello, \" + name + \"!\"; } std::cout << greet(\"Alice\") << std::endl; std::cout << greet(\"Bob\") << std::endl;"
+  },
+  {
+    "title": "Function Overloading",
+    "instructions": "Create multiple functions with the same name but different parameters. Overload functions for different data types.",
+    "hint": "void print(int num) { std::cout << \"Integer: \" << num << std::endl; } void print(const std::string& text) { std::cout << \"String: \" << text << std::endl; } void print(double num) { std::cout << \"Double: \" << num << std::endl; }"
+  },
+  {
+    "title": "Default Parameters and Inline Functions",
+    "instructions": "Create functions with default parameters and inline functions for performance optimization.",
+    "hint": "int add(int a, int b = 0) { return a + b; } inline int multiply(int a, int b) { return a * b; }"
+  },
+  {
+    "title": "References and Pointers",
+    "instructions": "Use references for pass-by-reference and pointers for dynamic memory allocation.",
+    "hint": "void modifyValue(int& value) { value *= 2; } int* ptr = new int(42); std::cout << *ptr << std::endl; delete ptr;"
+  },
+  {
+    "title": "Classes and Objects - Basic Definition",
+    "instructions": "Define a class Person with attributes name and age. Create an object and access its attributes. Add a method introduce() that prints person info.",
+    "hint": "class Person { public: std::string name; int age; void introduce() { std::cout << \"I am \" << name << \", \" << age << \" years old\" << std::endl; } }; Person person; person.name = \"Alice\"; person.age = 25;"
+  },
+  {
+    "title": "Constructors and Destructors",
+    "instructions": "Add constructors to the Person class. Create default constructor and parameterized constructor. Use 'this' pointer.",
+    "hint": "class Person { public: std::string name; int age; Person() : name(\"Unknown\"), age(0) {} Person(const std::string& name, int age) : name(name), age(age) {} ~Person() { std::cout << \"Person destroyed\" << std::endl; } };"
+  },
+  {
+    "title": "Inheritance and Method Overriding",
+    "instructions": "Create a Student class that extends Person. Add grade attribute and override introduce() method to include grade.",
+    "hint": "class Student : public Person { public: int grade; Student(const std::string& name, int age, int grade) : Person(name, age), grade(grade) {} void introduce() override { std::cout << \"I am \" << name << \", \" << age << \" years old, grade \" << grade << std::endl; } };"
+  },
+  {
+    "title": "Virtual Functions and Polymorphism",
+    "instructions": "Use virtual functions for runtime polymorphism. Create base class pointer pointing to derived class object.",
+    "hint": "class Animal { public: virtual void makeSound() { std::cout << \"Some sound\" << std::endl; } virtual ~Animal() {} }; class Dog : public Animal { public: void makeSound() override { std::cout << \"Woof!\" << std::endl; } }; Animal* animal = new Dog(); animal->makeSound();"
+  },
+  {
+    "title": "Abstract Classes and Pure Virtual Functions",
+    "instructions": "Create an abstract class Shape with pure virtual function area(). Implement it in Circle and Rectangle classes.",
+    "hint": "class Shape { public: virtual double area() = 0; virtual ~Shape() {} }; class Circle : public Shape { private: double radius; public: Circle(double r) : radius(r) {} double area() override { return 3.14159 * radius * radius; } };"
+  },
+  {
+    "title": "Static Members and Methods",
+    "instructions": "Add static members and methods to a class. Demonstrate static initialization and static member functions.",
+    "hint": "class Counter { private: static int count; public: Counter() { count++; } static int getCount() { return count; } static void reset() { count = 0; } }; int Counter::count = 0;"
+  },
+  {
+    "title": "Friend Functions and Classes",
+    "instructions": "Use friend functions and friend classes to access private members of a class.",
+    "hint": "class Box { private: double width; public: friend void printWidth(Box box); friend class BoxPrinter; }; void printWidth(Box box) { std::cout << box.width << std::endl; }"
+  },
+  {
+    "title": "Operator Overloading",
+    "instructions": "Overload operators like +, -, *, / for custom classes. Create a Complex number class with operator overloading.",
+    "hint": "class Complex { private: double real, imag; public: Complex(double r, double i) : real(r), imag(i) {} Complex operator+(const Complex& other) const { return Complex(real + other.real, imag + other.imag); } };"
+  },
+  {
+    "title": "Exception Handling with Try-Catch",
+    "instructions": "Write a program that divides two numbers and handles division by zero. Also handle invalid input exceptions.",
+    "hint": "try { int a = 10, b = 0; if(b == 0) throw std::runtime_error(\"Division by zero\"); std::cout << a / b << std::endl; } catch(const std::exception& e) { std::cerr << \"Error: \" << e.what() << std::endl; }"
+  },
+  {
+    "title": "Custom Exception Classes",
+    "instructions": "Create custom exception classes for specific error types. Inherit from std::exception and override what().",
+    "hint": "class ValidationException : public std::exception { private: std::string message; public: ValidationException(const std::string& msg) : message(msg) {} const char* what() const noexcept override { return message.c_str(); } };"
+  },
+  {
+    "title": "File I/O - Reading and Writing",
+    "instructions": "Write 'Hello, File!' to a file called 'test.txt'. Then read the file and print its contents. Use fstream.",
+    "hint": "#include <fstream>\nstd::ofstream outFile(\"test.txt\"); outFile << \"Hello, File!\" << std::endl; outFile.close(); std::ifstream inFile(\"test.txt\"); std::string line; std::getline(inFile, line); std::cout << line << std::endl;"
+  },
+  {
+    "title": "Templates - Function Templates",
+    "instructions": "Create template functions that work with different data types. Use type parameters for generic programming.",
+    "hint": "template<typename T>\nT add(T a, T b) { return a + b; } template<typename T>\nvoid printArray(T arr[], int size) { for(int i = 0; i < size; i++) std::cout << arr[i] << \" \"; }"
+  },
+  {
+    "title": "Class Templates",
+    "instructions": "Create template classes for generic data structures. Implement a simple Stack template class.",
+    "hint": "template<typename T>\nclass Stack { private: std::vector<T> elements; public: void push(const T& item) { elements.push_back(item); } T pop() { T item = elements.back(); elements.pop_back(); return item; } bool isEmpty() const { return elements.empty(); } };"
+  },
+  {
+    "title": "STL Algorithms",
+    "instructions": "Use STL algorithms like sort, find, copy, transform, and accumulate. Demonstrate functional programming with STL.",
+    "hint": "#include <algorithm>\n#include <numeric>\nstd::vector<int> numbers = {3,1,4,1,5,9,2,6}; std::sort(numbers.begin(), numbers.end()); auto it = std::find(numbers.begin(), numbers.end(), 5); int sum = std::accumulate(numbers.begin(), numbers.end(), 0);"
+  },
+  {
+    "title": "Lambda Expressions",
+    "instructions": "Create lambda expressions for inline function objects. Use lambdas with STL algorithms.",
+    "hint": "auto add = [](int a, int b) { return a + b; }; auto isEven = [](int n) { return n % 2 == 0; }; std::vector<int> evens; std::copy_if(numbers.begin(), numbers.end(), std::back_inserter(evens), isEven);"
+  },
+  {
+    "title": "Smart Pointers",
+    "instructions": "Use unique_ptr, shared_ptr, and weak_ptr for automatic memory management. Avoid raw pointers when possible.",
+    "hint": "#include <memory>\nstd::unique_ptr<int> ptr1 = std::make_unique<int>(42); std::shared_ptr<int> ptr2 = std::make_shared<int>(100); std::weak_ptr<int> weakPtr = ptr2;"
+  },
+  {
+    "title": "Move Semantics and Rvalue References",
+    "instructions": "Use move semantics to avoid unnecessary copying. Implement move constructor and move assignment operator.",
+    "hint": "class MyClass { private: std::vector<int> data; public: MyClass(MyClass&& other) noexcept : data(std::move(other.data)) {} MyClass& operator=(MyClass&& other) noexcept { if(this != &other) { data = std::move(other.data); } return *this; } };"
+  },
+  {
+    "title": "Perfect Forwarding and Universal References",
+    "instructions": "Use perfect forwarding with std::forward and universal references to preserve value categories.",
+    "hint": "template<typename T>\nvoid wrapper(T&& arg) { foo(std::forward<T>(arg)); } template<typename... Args>\nvoid emplace(Args&&... args) { // perfect forwarding with variadic templates }"
+  },
+  {
+    "title": "Variadic Templates",
+    "instructions": "Create functions and classes that accept variable number of template parameters. Use parameter packs.",
+    "hint": "template<typename... Args>\nvoid print(Args&&... args) { (std::cout << ... << args) << std::endl; } template<typename T, typename... Args>\nT sum(T first, Args... args) { return first + sum(args...); }"
+  },
+  {
+    "title": "Type Traits and SFINAE",
+    "instructions": "Use type traits for compile-time type checking and SFINAE for template specialization.",
+    "hint": "#include <type_traits>\ntemplate<typename T>\ntypename std::enable_if<std::is_integral<T>::value, T>::type add(T a, T b) { return a + b; } template<typename T>\nconstexpr bool is_numeric = std::is_arithmetic_v<T>;"
+  },
+  {
+    "title": "Constexpr and Compile-time Programming",
+    "instructions": "Use constexpr for compile-time evaluation and constexpr functions for compile-time computations.",
+    "hint": "constexpr int factorial(int n) { return n <= 1 ? 1 : n * factorial(n - 1); } constexpr int result = factorial(5); // computed at compile time"
+  },
+  {
+    "title": "Threading with std::thread",
+    "instructions": "Create threads using std::thread. Pass functions, lambdas, and member functions to threads.",
+    "hint": "#include <thread>\n#include <chrono>\nvoid worker() { std::cout << \"Worker thread\" << std::endl; } std::thread t(worker); t.join(); auto lambda = []() { std::cout << \"Lambda thread\" << std::endl; }; std::thread t2(lambda);"
+  },
+  {
+    "title": "Mutex and Synchronization",
+    "instructions": "Use std::mutex, std::lock_guard, and std::unique_lock for thread synchronization.",
+    "hint": "#include <mutex>\nstd::mutex mtx; int shared_data = 0; void increment() { std::lock_guard<std::mutex> lock(mtx); shared_data++; }"
+  },
+  {
+    "title": "Condition Variables",
+    "instructions": "Use std::condition_variable for thread communication and synchronization.",
+    "hint": "#include <condition_variable>\nstd::mutex mtx; std::condition_variable cv; bool ready = false; void wait_for_ready() { std::unique_lock<std::mutex> lock(mtx); cv.wait(lock, []{ return ready; }); }"
+  },
+  {
+    "title": "Atomic Operations",
+    "instructions": "Use std::atomic for lock-free programming and atomic operations.",
+    "hint": "#include <atomic>\nstd::atomic<int> counter{0}; counter.fetch_add(1); int value = counter.load(); counter.store(42);"
+  },
+  {
+    "title": "Future and Promise",
+    "instructions": "Use std::future and std::promise for asynchronous programming and result retrieval.",
+    "hint": "#include <future>\nstd::promise<int> promise; std::future<int> future = promise.get_future(); std::thread t([&promise]() { promise.set_value(42); }); int result = future.get(); t.join();"
+  },
+  {
+    "title": "Async and Launch Policies",
+    "instructions": "Use std::async for easy asynchronous execution with different launch policies.",
+    "hint": "auto future = std::async(std::launch::async, []() { return 42; }); int result = future.get(); auto deferred = std::async(std::launch::deferred, []() { return 100; });"
+  },
+  {
+    "title": "Regular Expressions",
+    "instructions": "Use std::regex for pattern matching and string manipulation.",
+    "hint": "#include <regex>\nstd::string text = \"Contact us at alice@email.com or bob@company.org\"; std::regex email_pattern(R\"([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,})\"); std::sregex_iterator it(text.begin(), text.end(), email_pattern);"
+  },
+  {
+    "title": "Random Number Generation",
+    "instructions": "Use modern C++ random number generators with different distributions.",
+    "hint": "#include <random>\nstd::random_device rd; std::mt19937 gen(rd()); std::uniform_int_distribution<> dis(1, 100); int random_number = dis(gen); std::normal_distribution<> normal(0.0, 1.0);"
+  },
+  {
+    "title": "Chrono Library",
+    "instructions": "Use std::chrono for time measurements, durations, and time points.",
+    "hint": "#include <chrono>\nusing namespace std::chrono; auto start = high_resolution_clock::now(); // ... code to measure ... auto end = high_resolution_clock::now(); auto duration = duration_cast<milliseconds>(end - start);"
+  },
+  {
+    "title": "Filesystem Library",
+    "instructions": "Use std::filesystem for file and directory operations.",
+    "hint": "#include <filesystem>\nnamespace fs = std::filesystem; fs::path p(\"test.txt\"); if(fs::exists(p)) { std::cout << \"File exists\" << std::endl; } for(const auto& entry : fs::directory_iterator(\".\")) { std::cout << entry.path() << std::endl; }"
+  },
+  {
+    "title": "Optional and Variant",
+    "instructions": "Use std::optional for nullable values and std::variant for type-safe unions.",
+    "hint": "#include <optional>\n#include <variant>\nstd::optional<int> getValue() { return 42; } std::optional<int> getNothing() { return std::nullopt; } std::variant<int, std::string, double> value = 42;"
+  },
+  {
+    "title": "Any and Tuple",
+    "instructions": "Use std::any for type-erased values and std::tuple for heterogeneous collections.",
+    "hint": "#include <any>\n#include <tuple>\nstd::any any_value = 42; any_value = \"hello\"; std::tuple<int, std::string, double> t(1, \"hello\", 3.14); int first = std::get<0>(t);"
+  },
+  {
+    "title": "Function Objects and Bind",
+    "instructions": "Use std::function, std::bind, and function objects for callable entities.",
+    "hint": "#include <functional>\nstd::function<int(int, int)> add = [](int a, int b) { return a + b; }; auto bound_func = std::bind(add, 10, std::placeholders::_1); int result = bound_func(5); // calls add(10, 5)"
+  },
+  {
+    "title": "Type Deduction and Auto",
+    "instructions": "Use auto for type deduction and decltype for type inference.",
+    "hint": "auto x = 42; // int auto str = \"hello\"; // const char* decltype(x) y = 100; // same type as x auto lambda = [](auto a, auto b) { return a + b; };"
+  },
+  {
+    "title": "Range-based For and Structured Bindings",
+    "instructions": "Use range-based for loops and structured bindings for cleaner code.",
+    "hint": "std::map<std::string, int> map = {{\"a\", 1}, {\"b\", 2}}; for(const auto& [key, value] : map) { std::cout << key << \": \" << value << std::endl; } auto [x, y] = std::make_pair(10, 20);"
+  },
+  {
+    "title": "Initializer Lists and Uniform Initialization",
+    "instructions": "Use initializer lists and uniform initialization syntax for consistent object creation.",
+    "hint": "std::vector<int> vec{1, 2, 3, 4, 5}; std::map<std::string, int> map{{\"a\", 1}, {\"b\", 2}}; class Point { public: int x, y; Point(int x, int y) : x(x), y(y) {} }; Point p{10, 20};"
+  },
+  {
+    "title": "RAII and Resource Management",
+    "instructions": "Implement RAII (Resource Acquisition Is Initialization) for automatic resource management.",
+    "hint": "class ResourceManager { private: int* ptr; public: ResourceManager() : ptr(new int(42)) {} ~ResourceManager() { delete ptr; } ResourceManager(const ResourceManager&) = delete; ResourceManager& operator=(const ResourceManager&) = delete; };"
+  },
+  {
+    "title": "Copy Elision and Return Value Optimization",
+    "instructions": "Understand copy elision and return value optimization for performance.",
+    "hint": "class MyClass { public: MyClass() { std::cout << \"Constructor\" << std::endl; } MyClass(const MyClass&) { std::cout << \"Copy Constructor\" << std::endl; } }; MyClass createObject() { return MyClass(); } // RVO applies"
+  },
+  {
+    "title": "Exception Safety and RAII",
+    "instructions": "Implement exception-safe code using RAII and the strong exception guarantee.",
+    "hint": "class ExceptionSafeClass { private: std::unique_ptr<int> ptr; public: void setValue(int value) { auto newPtr = std::make_unique<int>(value); ptr = std::move(newPtr); // strong exception guarantee } };"
+  },
+  {
+    "title": "CRTP (Curiously Recurring Template Pattern)",
+    "instructions": "Implement CRTP for static polymorphism and compile-time polymorphism.",
+    "hint": "template<typename Derived>\nclass Base { public: void interface() { static_cast<Derived*>(this)->implementation(); } }; class Derived : public Base<Derived> { public: void implementation() { std::cout << \"Derived implementation\" << std::endl; } };"
+  },
+  {
+    "title": "Type Erasure and Virtual Functions",
+    "instructions": "Implement type erasure using virtual functions and inheritance.",
+    "hint": "class Concept { public: virtual ~Concept() = default; virtual void doSomething() = 0; }; template<typename T>\nclass Model : public Concept { private: T data; public: Model(T value) : data(value) {} void doSomething() override { /* use data */ } };"
+  },
+  {
+    "title": "Expression Templates",
+    "instructions": "Implement expression templates for lazy evaluation and performance optimization.",
+    "hint": "template<typename Lhs, typename Rhs>\nclass AddExpr { private: const Lhs& lhs; const Rhs& rhs; public: AddExpr(const Lhs& l, const Rhs& r) : lhs(l), rhs(r) {} double operator[](size_t i) const { return lhs[i] + rhs[i]; } };"
+  },
+  {
+    "title": "SFINAE and Enable_if",
+    "instructions": "Use SFINAE (Substitution Failure Is Not An Error) for template specialization.",
+    "hint": "template<typename T>\ntypename std::enable_if<std::is_integral<T>::value, T>::type add(T a, T b) { return a + b; } template<typename T>\ntypename std::enable_if<std::is_floating_point<T>::value, T>::type add(T a, T b) { return a + b; }"
+  },
+  {
+    "title": "Concepts (C++20)",
+    "instructions": "Use concepts for template constraints and better error messages.",
+    "hint": "template<typename T>\nconcept Addable = requires(T a, T b) { { a + b } -> std::convertible_to<T>; }; template<Addable T>\nT add(T a, T b) { return a + b; }"
+  },
+  {
+    "title": "Modules (C++20)",
+    "instructions": "Use C++20 modules for better compilation times and encapsulation.",
+    "hint": "// math.cppm\nmodule; #include <cmath>\nexport module math; export namespace math { double sqrt(double x) { return std::sqrt(x); } } // main.cpp\nimport math; int main() { double result = math::sqrt(16.0); }"
+  },
+  {
+    "title": "Coroutines (C++20)",
+    "instructions": "Use C++20 coroutines for asynchronous programming.",
+    "hint": "#include <coroutine>\nstruct Task { struct promise_type { Task get_return_object() { return {}; } std::suspend_never initial_suspend() { return {}; } std::suspend_never final_suspend() noexcept { return {}; } void return_void() {} }; }; Task asyncFunction() { co_await std::suspend_never{}; }"
+  },
+  {
+    "title": "Three-way Comparison (C++20)",
+    "instructions": "Use the three-way comparison operator (<=>) for simplified comparison operations.",
+    "hint": "class Point { public: int x, y; auto operator<=>(const Point& other) const = default; // generates all comparison operators }; Point p1{1, 2}, p2{1, 3}; bool result = p1 < p2; // uses <=>"
+  },
+  {
+    "title": "Design Patterns in C++",
+    "instructions": "Implement common design patterns like Singleton, Factory, Observer, and Strategy in C++.",
+    "hint": "class Singleton { private: static Singleton* instance; Singleton() = default; public: static Singleton* getInstance() { if(!instance) instance = new Singleton(); return instance; } }; Singleton* Singleton::instance = nullptr;"
+  },
+  {
+    "title": "Memory Pools and Custom Allocators",
+    "instructions": "Implement custom allocators and memory pools for performance optimization.",
+    "hint": "template<typename T>\nclass PoolAllocator { private: static std::vector<T*> pool; public: T* allocate() { if(pool.empty()) return new T(); T* obj = pool.back(); pool.pop_back(); return obj; } void deallocate(T* ptr) { pool.push_back(ptr); } };"
+  },
+  {
+    "title": "Lock-free Programming",
+    "instructions": "Implement lock-free data structures using atomic operations and memory ordering.",
+    "hint": "template<typename T>\nclass LockFreeQueue { private: struct Node { T data; std::atomic<Node*> next; }; std::atomic<Node*> head, tail; public: void enqueue(T value) { Node* newNode = new Node{value, nullptr}; Node* oldTail = tail.exchange(newNode); if(oldTail) oldTail->next.store(newNode); } };"
+  },
+  {
+    "title": "SIMD Programming",
+    "instructions": "Use SIMD instructions for vectorized operations and performance optimization.",
+    "hint": "#include <immintrin.h>\nvoid vectorAdd(float* a, float* b, float* result, int size) { for(int i = 0; i < size; i += 8) { __m256 va = _mm256_load_ps(&a[i]); __m256 vb = _mm256_load_ps(&b[i]); __m256 vresult = _mm256_add_ps(va, vb); _mm256_store_ps(&result[i], vresult); } }"
+  },
+  {
+    "title": "Inter-process Communication",
+    "instructions": "Implement IPC mechanisms like shared memory, pipes, and message queues.",
+    "hint": "#include <sys/ipc.h>\n#include <sys/shm.h>\nkey_t key = ftok(\"shmfile\", 65); int shmid = shmget(key, 1024, 0666|IPC_CREAT); char* str = (char*)shmat(shmid, (void*)0, 0); strcpy(str, \"Hello IPC\"); shmdt(str); shmctl(shmid, IPC_RMID, NULL);"
+  },
+  {
+    "title": "Network Programming with Sockets",
+    "instructions": "Create network applications using TCP and UDP sockets.",
+    "hint": "#include <sys/socket.h>\n#include <netinet/in.h>\nint sockfd = socket(AF_INET, SOCK_STREAM, 0); struct sockaddr_in servaddr; servaddr.sin_family = AF_INET; servaddr.sin_addr.s_addr = INADDR_ANY; servaddr.sin_port = htons(8080); bind(sockfd, (struct sockaddr*)&servaddr, sizeof(servaddr));"
+  },
+  {
+    "title": "Database Integration",
+    "instructions": "Connect to databases using libraries like SQLite, MySQL, or PostgreSQL.",
+    "hint": "#include <sqlite3.h>\nsqlite3* db; sqlite3_open(\"test.db\", &db); const char* sql = \"CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT);\"; sqlite3_exec(db, sql, 0, 0, 0); sqlite3_close(db);"
+  },
+  {
+    "title": "Testing with Google Test",
+    "instructions": "Write unit tests using Google Test framework.",
+    "hint": "#include <gtest/gtest.h>\nTEST(MathTest, Addition) { EXPECT_EQ(add(2, 3), 5); EXPECT_EQ(add(-1, -2), -3); } TEST(MathTest, Division) { EXPECT_THROW(divide(1, 0), std::runtime_error); } int main(int argc, char** argv) { ::testing::InitGoogleTest(&argc, argv); return RUN_ALL_TESTS(); }"
+  },
+  {
+    "title": "Performance Profiling and Optimization",
+    "instructions": "Use profiling tools and optimize C++ code for performance.",
+    "hint": "// Use gprof for profiling\n// Compile with -pg flag\n// Run program and then gprof\n// Use valgrind for memory profiling\n// valgrind --tool=memcheck ./program\n// Use perf for performance analysis\n// perf record ./program && perf report"
+  },
+  {
+    "title": "Security Best Practices",
+    "instructions": "Implement security measures including input validation, buffer overflow prevention, and secure coding practices.",
+    "hint": "// Use std::string instead of char arrays\n// Validate all input\n// Use smart pointers to prevent memory leaks\n// Avoid raw pointers when possible\n// Use const correctness\n// Implement proper error handling"
+  },
+  {
+    "title": "Advanced C++ Features and Best Practices",
+    "instructions": "Implement advanced C++ features and follow best practices for modern C++ development.",
+    "hint": "// Use auto for type deduction\n// Prefer range-based for loops\n// Use nullptr instead of NULL\n// Use override keyword for virtual functions\n// Use = default and = delete\n// Use std::move for move semantics\n// Use constexpr for compile-time evaluation\n// Use std::array instead of C-style arrays"
+  }
+] 

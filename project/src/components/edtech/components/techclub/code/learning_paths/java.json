@@ -1,0 +1,407 @@
+[
+  {
+    "title": "Your First Java Program",
+    "instructions": "Write a Java program that prints 'Hello, World!' to the console. Use System.out.println().",
+    "hint": "public class HelloWorld { public static void main(String[] args) { System.out.println('Hello, World!'); } }"
+  },
+  {
+    "title": "Variables and Basic Data Types",
+    "instructions": "Create variables for different data types: an int (age = 25), a double (height = 5.9), a String (name = 'Alice'), a boolean (isStudent = true), and a char (grade = 'A'). Print each variable.",
+    "hint": "int age = 25; double height = 5.9; String name = 'Alice'; boolean isStudent = true; char grade = 'A'; System.out.println(age + ' ' + height + ' ' + name + ' ' + isStudent + ' ' + grade);"
+  },
+  {
+    "title": "String Operations and Methods",
+    "instructions": "Create a String 'hello world' and demonstrate: converting to uppercase, getting length, splitting into words, replacing 'world' with 'java', and checking if it contains 'hello'.",
+    "hint": "String text = 'hello world'; System.out.println(text.toUpperCase() + ' ' + text.length() + ' ' + text.replace('world', 'java') + ' ' + text.contains('hello'));"
+  },
+  {
+    "title": "Input and Type Conversion",
+    "instructions": "Ask the user for their name and age using Scanner. Convert age to integer. Print a message like 'Hello [name], you are [age] years old'.",
+    "hint": "import java.util.Scanner; Scanner sc = new Scanner(System.in); System.out.print('Enter your name: '); String name = sc.nextLine(); System.out.print('Enter your age: '); int age = sc.nextInt(); System.out.println('Hello ' + name + ', you are ' + age + ' years old');"
+  },
+  {
+    "title": "Arithmetic Operations and Math",
+    "instructions": "Perform basic arithmetic: addition, subtraction, multiplication, division, modulo, and exponentiation. Also use Math class for sqrt(), pow(), round(), and random().",
+    "hint": "int a = 10, b = 3; System.out.println(a+b + ' ' + (a-b) + ' ' + (a*b) + ' ' + (a/b) + ' ' + (a%b) + ' ' + Math.pow(a, b)); System.out.println(Math.sqrt(a) + ' ' + Math.round(3.6) + ' ' + Math.random());"
+  },
+  {
+    "title": "Arrays - Creation and Basic Operations",
+    "instructions": "Create an array with numbers 1-5. Print all elements using a loop. Also demonstrate length, finding max/min, and calculating sum.",
+    "hint": "int[] numbers = {1,2,3,4,5}; for(int num : numbers) System.out.print(num + ' '); System.out.println('Length: ' + numbers.length);"
+  },
+  {
+    "title": "Array Methods and Manipulation",
+    "instructions": "Create an array and demonstrate sorting, copying, and searching operations. Use Arrays class methods.",
+    "hint": "import java.util.Arrays; int[] arr = {3,1,4,1,5}; Arrays.sort(arr); int index = Arrays.binarySearch(arr, 4); int[] copy = Arrays.copyOf(arr, arr.length);"
+  },
+  {
+    "title": "ArrayList - Dynamic Arrays",
+    "instructions": "Create an ArrayList of integers, add elements, remove elements, and demonstrate various ArrayList methods.",
+    "hint": "import java.util.ArrayList; ArrayList<Integer> list = new ArrayList<>(); list.add(1); list.add(2); list.remove(0); System.out.println(list.size() + ' ' + list.contains(2));"
+  },
+  {
+    "title": "LinkedList and Other Collections",
+    "instructions": "Create a LinkedList and demonstrate its methods. Also create a HashSet for unique elements.",
+    "hint": "import java.util.LinkedList; import java.util.HashSet; LinkedList<String> linkedList = new LinkedList<>(); linkedList.addFirst('first'); HashSet<Integer> set = new HashSet<>(); set.add(1); set.add(1); // duplicates ignored"
+  },
+  {
+    "title": "HashMap and TreeMap",
+    "instructions": "Create a HashMap with String keys and Object values. Add, remove, and iterate through key-value pairs.",
+    "hint": "import java.util.HashMap; HashMap<String, Object> map = new HashMap<>(); map.put('name', 'Alice'); map.put('age', 25); for(String key : map.keySet()) System.out.println(key + ': ' + map.get(key));"
+  },
+  {
+    "title": "If-Else Statements and Comparison",
+    "instructions": "Write a program that checks if a number is positive, negative, or zero. Also check if it's even or odd. Use if, else if, and else statements.",
+    "hint": "int num = 15; if(num > 0) System.out.println('Positive'); else if(num < 0) System.out.println('Negative'); else System.out.println('Zero'); if(num % 2 == 0) System.out.println('Even'); else System.out.println('Odd');"
+  },
+  {
+    "title": "Logical Operators and Complex Conditions",
+    "instructions": "Check if a number is between 10 and 50, or if it's divisible by both 3 and 5. Use &&, ||, and ! operators.",
+    "hint": "int num = 15; System.out.println(num >= 10 && num <= 50); System.out.println(num % 3 == 0 && num % 5 == 0);"
+  },
+  {
+    "title": "For Loops - Different Types",
+    "instructions": "Use traditional for loop to print numbers 1-10, enhanced for loop to iterate through an array, and forEach with collections.",
+    "hint": "for(int i = 1; i <= 10; i++) System.out.println(i); for(int num : numbers) System.out.println(num); list.forEach(System.out::println);"
+  },
+  {
+    "title": "While and Do-While Loops",
+    "instructions": "Use while loop to find first number divisible by 7. Use do-while loop to print numbers 1-5.",
+    "hint": "int num = 1; while(num % 7 != 0) num++; int i = 1; do { System.out.println(i); i++; } while(i <= 5);"
+  },
+  {
+    "title": "Basic Methods - Definition and Call",
+    "instructions": "Define a method greet() that takes a String parameter and returns a greeting string. Call it with different names.",
+    "hint": "public static String greet(String name) { return 'Hello, ' + name + '!'; } System.out.println(greet('Alice')); System.out.println(greet('Bob'));"
+  },
+  {
+    "title": "Method Overloading",
+    "instructions": "Create multiple methods with the same name but different parameters. Overload methods for different data types.",
+    "hint": "public static void print(int num) { System.out.println('Integer: ' + num); } public static void print(String text) { System.out.println('String: ' + text); } public static void print(double num) { System.out.println('Double: ' + num); }"
+  },
+  {
+    "title": "Varargs and Variable Arguments",
+    "instructions": "Create a method that takes variable number of arguments using varargs. Sum all provided numbers.",
+    "hint": "public static int sum(int... numbers) { int total = 0; for(int num : numbers) total += num; return total; } System.out.println(sum(1,2,3,4,5));"
+  },
+  {
+    "title": "Lambda Expressions and Functional Interfaces",
+    "instructions": "Create lambda expressions for different operations. Use functional interfaces like Predicate, Consumer, and Function.",
+    "hint": "import java.util.function.Predicate; import java.util.function.Consumer; Predicate<Integer> isEven = n -> n % 2 == 0; Consumer<String> printer = s -> System.out.println(s); Function<Integer, Integer> square = n -> n * n;"
+  },
+  {
+    "title": "Classes and Objects - Basic Definition",
+    "instructions": "Define a class Person with attributes name and age. Create an object and access its attributes. Add a method introduce() that prints person info.",
+    "hint": "class Person { String name; int age; public void introduce() { System.out.println('I am ' + name + ', ' + age + ' years old'); } } Person person = new Person(); person.name = 'Alice'; person.age = 25;"
+  },
+  {
+    "title": "Constructors and Object Initialization",
+    "instructions": "Add constructors to the Person class. Create default constructor and parameterized constructor. Use 'this' keyword.",
+    "hint": "class Person { String name; int age; public Person() { this.name = 'Unknown'; this.age = 0; } public Person(String name, int age) { this.name = name; this.age = age; } }"
+  },
+  {
+    "title": "Inheritance and Method Overriding",
+    "instructions": "Create a Student class that extends Person. Add grade attribute and override introduce() method to include grade.",
+    "hint": "class Student extends Person { int grade; public Student(String name, int age, int grade) { super(name, age); this.grade = grade; } @Override public void introduce() { System.out.println('I am ' + name + ', ' + age + ' years old, grade ' + grade); } }"
+  },
+  {
+    "title": "Abstract Classes and Methods",
+    "instructions": "Create an abstract class Animal with abstract method makeSound(). Implement it in Dog and Cat classes.",
+    "hint": "abstract class Animal { abstract void makeSound(); } class Dog extends Animal { @Override void makeSound() { System.out.println('Woof!'); } }"
+  },
+  {
+    "title": "Interfaces and Multiple Inheritance",
+    "instructions": "Define an interface Drawable with method draw(). Implement it in Circle and Rectangle classes. Use default methods.",
+    "hint": "interface Drawable { void draw(); default void describe() { System.out.println('This is a drawable object'); } } class Circle implements Drawable { @Override public void draw() { System.out.println('Drawing circle'); } }"
+  },
+  {
+    "title": "Static Methods and Variables",
+    "instructions": "Add static methods and variables to a class. Demonstrate static initialization blocks and static imports.",
+    "hint": "class MathUtils { static int count = 0; static { count = 0; } public static int add(int a, int b) { count++; return a + b; } }"
+  },
+  {
+    "title": "Final Keyword and Constants",
+    "instructions": "Use final keyword for constants, final methods, and final classes. Demonstrate immutability.",
+    "hint": "public static final double PI = 3.14159; final class ImmutableClass { private final String value; public ImmutableClass(String value) { this.value = value; } public String getValue() { return value; } }"
+  },
+  {
+    "title": "Access Modifiers and Encapsulation",
+    "instructions": "Use private, protected, and public access modifiers. Create getter and setter methods for encapsulation.",
+    "hint": "class BankAccount { private double balance; public double getBalance() { return balance; } public void setBalance(double balance) { if(balance >= 0) this.balance = balance; } }"
+  },
+  {
+    "title": "Exception Handling with Try-Catch",
+    "instructions": "Write a program that divides two numbers and handles division by zero. Also handle NumberFormatException.",
+    "hint": "try { int a = 10, b = 0; if(b == 0) throw new ArithmeticException('Division by zero'); System.out.println(a / b); } catch(ArithmeticException e) { System.out.println('Cannot divide by zero'); } catch(NumberFormatException e) { System.out.println('Please enter valid numbers'); }"
+  },
+  {
+    "title": "Custom Exceptions",
+    "instructions": "Create custom exception classes for specific error types. Inherit from Exception and add custom attributes.",
+    "hint": "class ValidationException extends Exception { private String field; public ValidationException(String message, String field) { super(message); this.field = field; } public String getField() { return field; } }"
+  },
+  {
+    "title": "File I/O - Reading and Writing",
+    "instructions": "Write 'Hello, File!' to a file called 'test.txt'. Then read the file and print its contents. Use try-with-resources.",
+    "hint": "import java.io.*; try(FileWriter writer = new FileWriter('test.txt')) { writer.write('Hello, File!'); } try(BufferedReader reader = new BufferedReader(new FileReader('test.txt'))) { String line = reader.readLine(); System.out.println(line); }"
+  },
+  {
+    "title": "Serialization and Object Persistence",
+    "instructions": "Create a class that implements Serializable. Serialize an object to file and deserialize it back.",
+    "hint": "import java.io.*; class Person implements Serializable { private static final long serialVersionUID = 1L; String name; int age; } try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream('person.ser'))) { oos.writeObject(person); }"
+  },
+  {
+    "title": "Generics - Type Safety",
+    "instructions": "Create generic classes and methods. Use type parameters to ensure type safety at compile time.",
+    "hint": "class Box<T> { private T content; public void set(T content) { this.content = content; } public T get() { return content; } } Box<String> stringBox = new Box<>(); stringBox.set('Hello');"
+  },
+  {
+    "title": "Generic Methods and Bounded Types",
+    "instructions": "Create generic methods with bounded type parameters. Use wildcards and type bounds.",
+    "hint": "public static <T extends Comparable<T>> T max(T a, T b) { return a.compareTo(b) > 0 ? a : b; } public static void printList(List<?> list) { for(Object item : list) System.out.println(item); }"
+  },
+  {
+    "title": "Collections Framework - Advanced",
+    "instructions": "Use TreeSet for sorted unique elements, TreeMap for sorted key-value pairs, and PriorityQueue for priority-based operations.",
+    "hint": "import java.util.*; TreeSet<Integer> sortedSet = new TreeSet<>(); sortedSet.add(3); sortedSet.add(1); sortedSet.add(2); // automatically sorted TreeMap<String, Integer> sortedMap = new TreeMap<>(); PriorityQueue<Integer> pq = new PriorityQueue<>();"
+  },
+  {
+    "title": "Streams API and Functional Programming",
+    "instructions": "Use Stream API for data processing. Demonstrate map, filter, reduce, and collect operations.",
+    "hint": "import java.util.stream.*; List<Integer> numbers = Arrays.asList(1,2,3,4,5); List<Integer> doubled = numbers.stream().map(n -> n * 2).collect(Collectors.toList()); int sum = numbers.stream().reduce(0, Integer::sum);"
+  },
+  {
+    "title": "Optional Class and Null Safety",
+    "instructions": "Use Optional to handle null values safely. Demonstrate Optional.of(), Optional.empty(), and Optional methods.",
+    "hint": "import java.util.Optional; Optional<String> optional = Optional.of('Hello'); optional.ifPresent(System.out::println); String result = optional.orElse('Default'); Optional<String> empty = Optional.empty();"
+  },
+  {
+    "title": "Date and Time API",
+    "instructions": "Use LocalDate, LocalTime, LocalDateTime, and Duration classes for modern date and time handling.",
+    "hint": "import java.time.*; LocalDate today = LocalDate.now(); LocalTime now = LocalTime.now(); LocalDateTime dateTime = LocalDateTime.now(); Duration duration = Duration.between(now, now.plusHours(2));"
+  },
+  {
+    "title": "Threading Basics",
+    "instructions": "Create threads by extending Thread class and implementing Runnable interface. Demonstrate thread lifecycle.",
+    "hint": "class MyThread extends Thread { public void run() { System.out.println('Thread running'); } } MyThread thread = new MyThread(); thread.start();"
+  },
+  {
+    "title": "Synchronization and Thread Safety",
+    "instructions": "Use synchronized keyword and Lock interface for thread synchronization. Demonstrate race conditions and solutions.",
+    "hint": "class Counter { private int count = 0; public synchronized void increment() { count++; } public synchronized int getCount() { return count; } }"
+  },
+  {
+    "title": "Executor Framework",
+    "instructions": "Use ExecutorService for thread pool management. Submit tasks and handle Future results.",
+    "hint": "import java.util.concurrent.*; ExecutorService executor = Executors.newFixedThreadPool(2); Future<String> future = executor.submit(() -> 'Task completed'); String result = future.get(); executor.shutdown();"
+  },
+  {
+    "title": "Concurrent Collections",
+    "instructions": "Use ConcurrentHashMap, CopyOnWriteArrayList, and BlockingQueue for thread-safe collections.",
+    "hint": "import java.util.concurrent.*; ConcurrentHashMap<String, Integer> map = new ConcurrentHashMap<>(); CopyOnWriteArrayList<String> list = new CopyOnWriteArrayList<>(); BlockingQueue<String> queue = new LinkedBlockingQueue<>();"
+  },
+  {
+    "title": "Reflection API",
+    "instructions": "Use reflection to inspect classes, methods, and fields at runtime. Create objects dynamically.",
+    "hint": "import java.lang.reflect.*; Class<?> clazz = Person.class; Method[] methods = clazz.getMethods(); Field[] fields = clazz.getDeclaredFields(); Constructor<?> constructor = clazz.getConstructor(String.class, int.class);"
+  },
+  {
+    "title": "Annotations and Custom Annotations",
+    "instructions": "Create custom annotations and use built-in annotations like @Override, @Deprecated, and @SuppressWarnings.",
+    "hint": "import java.lang.annotation.*; @Target(ElementType.METHOD) @Retention(RetentionPolicy.RUNTIME) @interface MyAnnotation { String value() default ''; } @MyAnnotation('test') public void testMethod() {}"
+  },
+  {
+    "title": "Enum Classes and Advanced Features",
+    "instructions": "Create enum classes with constructors, methods, and fields. Use enum for singleton pattern.",
+    "hint": "enum DayOfWeek { MONDAY('Mon'), TUESDAY('Tue'); private String shortName; DayOfWeek(String shortName) { this.shortName = shortName; } public String getShortName() { return shortName; } }"
+  },
+  {
+    "title": "Inner Classes and Anonymous Classes",
+    "instructions": "Create inner classes, static nested classes, and anonymous classes. Demonstrate closure-like behavior.",
+    "hint": "class Outer { private int x = 10; class Inner { void display() { System.out.println(x); } } } Outer outer = new Outer(); Outer.Inner inner = outer.new Inner();"
+  },
+  {
+    "title": "Lambda Expressions - Advanced",
+    "instructions": "Use method references, constructor references, and complex lambda expressions with multiple parameters.",
+    "hint": "List<String> names = Arrays.asList('Alice', 'Bob', 'Charlie'); names.forEach(System.out::println); // method reference Supplier<Person> personSupplier = Person::new; // constructor reference BiFunction<String, Integer, Person> personFactory = Person::new;"
+  },
+  {
+    "title": "CompletableFuture and Async Programming",
+    "instructions": "Use CompletableFuture for asynchronous programming. Chain operations and handle exceptions.",
+    "hint": "import java.util.concurrent.CompletableFuture; CompletableFuture<String> future = CompletableFuture.supplyAsync(() -> 'Hello').thenApply(s -> s + ' World').thenAccept(System.out::println);"
+  },
+  {
+    "title": "NIO.2 and File Operations",
+    "instructions": "Use Path, Files, and DirectoryStream for modern file operations. Handle file attributes and symbolic links.",
+    "hint": "import java.nio.file.*; Path path = Paths.get('test.txt'); Files.write(path, 'Hello NIO'.getBytes()); List<String> lines = Files.readAllLines(path); Files.walk(path.getParent()).forEach(System.out::println);"
+  },
+  {
+    "title": "Regular Expressions",
+    "instructions": "Use Pattern and Matcher classes for regex operations. Validate email, phone numbers, and extract data.",
+    "hint": "import java.util.regex.*; Pattern pattern = Pattern.compile('^[A-Za-z0-9+_.-]+@(.+)$'); Matcher matcher = pattern.matcher('test@email.com'); boolean isValid = matcher.matches();"
+  },
+  {
+    "title": "JSON Processing",
+    "instructions": "Use JSON-P API for JSON processing. Parse JSON strings and create JSON objects.",
+    "hint": "import javax.json.*; JsonObject json = Json.createObjectBuilder().add('name', 'Alice').add('age', 25).build(); String jsonString = json.toString(); JsonReader reader = Json.createReader(new StringReader(jsonString));"
+  },
+  {
+    "title": "Database Connectivity with JDBC",
+    "instructions": "Connect to a database using JDBC. Execute queries and handle result sets.",
+    "hint": "import java.sql.*; try(Connection conn = DriverManager.getConnection('jdbc:mysql://localhost:3306/test', 'user', 'pass')) { Statement stmt = conn.createStatement(); ResultSet rs = stmt.executeQuery('SELECT * FROM users'); while(rs.next()) { System.out.println(rs.getString('name')); } }"
+  },
+  {
+    "title": "JUnit Testing Framework",
+    "instructions": "Write unit tests using JUnit. Test different scenarios including edge cases and exceptions.",
+    "hint": "import org.junit.jupiter.api.*; @Test void testAddition() { assertEquals(4, Calculator.add(2, 2)); } @Test void testDivisionByZero() { assertThrows(ArithmeticException.class, () -> Calculator.divide(1, 0)); }"
+  },
+  {
+    "title": "Logging with SLF4J and Logback",
+    "instructions": "Configure logging with SLF4J and Logback. Use different log levels and custom appenders.",
+    "hint": "import org.slf4j.*; Logger logger = LoggerFactory.getLogger(MyClass.class); logger.debug('Debug message'); logger.info('Info message'); logger.warn('Warning message'); logger.error('Error message');"
+  },
+  {
+    "title": "Design Patterns - Singleton",
+    "instructions": "Implement singleton pattern with thread safety and lazy initialization.",
+    "hint": "class Singleton { private static volatile Singleton instance; private Singleton() {} public static Singleton getInstance() { if(instance == null) { synchronized(Singleton.class) { if(instance == null) instance = new Singleton(); } } return instance; } }"
+  },
+  {
+    "title": "Design Patterns - Factory and Builder",
+    "instructions": "Implement factory pattern for object creation and builder pattern for complex object construction.",
+    "hint": "class PersonBuilder { private String name; private int age; public PersonBuilder name(String name) { this.name = name; return this; } public PersonBuilder age(int age) { this.age = age; return this; } public Person build() { return new Person(name, age); } }"
+  },
+  {
+    "title": "Observer Pattern Implementation",
+    "instructions": "Implement observer pattern for event handling and notification system.",
+    "hint": "interface Observer { void update(String message); } class Subject { private List<Observer> observers = new ArrayList<>(); public void addObserver(Observer observer) { observers.add(observer); } public void notifyObservers(String message) { for(Observer observer : observers) observer.update(message); } }"
+  },
+  {
+    "title": "Strategy Pattern and Command Pattern",
+    "instructions": "Implement strategy pattern for interchangeable algorithms and command pattern for request encapsulation.",
+    "hint": "interface PaymentStrategy { void pay(int amount); } class CreditCardPayment implements PaymentStrategy { public void pay(int amount) { System.out.println('Paid ' + amount + ' using credit card'); } }"
+  },
+  {
+    "title": "Memory Management and Garbage Collection",
+    "instructions": "Understand garbage collection and memory management. Use weak references and demonstrate memory leaks.",
+    "hint": "import java.lang.ref.WeakReference; WeakReference<Object> weakRef = new WeakReference<>(new Object()); System.gc(); // may cause weak reference to be cleared"
+  },
+  {
+    "title": "Performance Optimization",
+    "instructions": "Use profiling tools and optimize code performance. Implement caching and efficient algorithms.",
+    "hint": "// Use StringBuilder for string concatenation in loops StringBuilder sb = new StringBuilder(); for(int i = 0; i < 1000; i++) { sb.append(i); } String result = sb.toString();"
+  },
+  {
+    "title": "Security Best Practices",
+    "instructions": "Implement security measures including input validation, SQL injection prevention, and secure coding practices.",
+    "hint": "// Use PreparedStatement to prevent SQL injection PreparedStatement pstmt = conn.prepareStatement('SELECT * FROM users WHERE id = ?'); pstmt.setInt(1, userId); // Input validation if(userId > 0 && userId < 1000000) { // process }"
+  },
+  {
+    "title": "Internationalization (i18n)",
+    "instructions": "Use ResourceBundle for internationalization. Handle different locales and character encodings.",
+    "hint": "import java.util.*; Locale locale = new Locale('en', 'US'); ResourceBundle bundle = ResourceBundle.getBundle('messages', locale); String message = bundle.getString('hello');"
+  },
+  {
+    "title": "Java Modules (Java 9+)",
+    "instructions": "Create modular applications using Java Platform Module System. Define module-info.java files.",
+    "hint": "// module-info.java module com.example.app { requires java.base; requires java.sql; exports com.example.app; }"
+  },
+  {
+    "title": "Records (Java 14+)",
+    "instructions": "Use records for immutable data classes. Create simple data transfer objects.",
+    "hint": "record Person(String name, int age) { // automatically generates constructor, getters, equals, hashCode, toString } Person person = new Person('Alice', 25); System.out.println(person.name());"
+  },
+  {
+    "title": "Pattern Matching (Java 14+)",
+    "instructions": "Use pattern matching for instanceof and switch expressions. Simplify type checking and casting.",
+    "hint": "Object obj = 'Hello'; if(obj instanceof String str) { System.out.println(str.length()); } // Switch expressions int result = switch(obj) { case String s -> s.length(); case Integer i -> i; default -> 0; };"
+  },
+  {
+    "title": "Text Blocks (Java 15+)",
+    "instructions": "Use text blocks for multi-line strings. Improve readability of complex string literals.",
+    "hint": "String sql = ''' SELECT name, age FROM users WHERE age > 18 ORDER BY name '''; String json = ''' { 'name': 'Alice', 'age': 25 } ''';"
+  },
+  {
+    "title": "Sealed Classes (Java 17+)",
+    "instructions": "Use sealed classes to restrict inheritance. Create type hierarchies with controlled extensibility.",
+    "hint": "sealed abstract class Shape permits Circle, Rectangle, Triangle { abstract double area(); } final class Circle extends Shape { private double radius; @Override double area() { return Math.PI * radius * radius; } }"
+  },
+  {
+    "title": "Virtual Threads (Java 21+)",
+    "instructions": "Use virtual threads for high-throughput concurrent applications. Demonstrate structured concurrency.",
+    "hint": "import java.util.concurrent.*; try(var executor = Executors.newVirtualThreadPerTaskExecutor()) { Future<String> future = executor.submit(() -> 'Hello from virtual thread'); String result = future.get(); }"
+  },
+  {
+    "title": "Foreign Function Interface (Java 22+)",
+    "instructions": "Use Panama FFI to call native code from Java. Interact with C libraries and system calls.",
+    "hint": "import java.lang.foreign.*; import java.lang.invoke.MethodHandle; Linker linker = Linker.nativeLinker(); SymbolLookup lookup = SymbolLookup.libraryLookup('libc', MemorySession.global()); MethodHandle printf = linker.downcallHandle(lookup.find('printf').get(), FunctionDescriptor.of(ValueLayout.JAVA_INT, ValueLayout.ADDRESS));"
+  },
+  {
+    "title": "Advanced Reflection and Dynamic Proxies",
+    "instructions": "Use dynamic proxies and advanced reflection techniques for metaprogramming and AOP-like functionality.",
+    "hint": "import java.lang.reflect.Proxy; MyInterface proxy = (MyInterface) Proxy.newProxyInstance(MyInterface.class.getClassLoader(), new Class<?>[] { MyInterface.class }, (proxyObj, method, args) -> { System.out.println('Calling ' + method.getName()); return method.invoke(realObject, args); });"
+  },
+  {
+    "title": "Bytecode Manipulation with ASM",
+    "instructions": "Use ASM library for bytecode manipulation. Create classes dynamically and modify existing classes.",
+    "hint": "import org.objectweb.asm.*; ClassWriter cw = new ClassWriter(ClassWriter.COMPUTE_FRAMES); cw.visit(Opcodes.V1_8, Opcodes.ACC_PUBLIC, 'DynamicClass', null, 'java/lang/Object', null); // Add methods and fields cw.visitEnd(); byte[] classBytes = cw.toByteArray();"
+  },
+  {
+    "title": "Java Agent and Instrumentation",
+    "instructions": "Create a Java agent for bytecode instrumentation. Monitor method calls and modify behavior at runtime.",
+    "hint": "import java.lang.instrument.*; public class MyAgent { public static void premain(String args, Instrumentation inst) { inst.addTransformer(new ClassFileTransformer() { @Override public byte[] transform(ClassLoader loader, String className, Class<?> classBeingRedefined, ProtectionDomain protectionDomain, byte[] classfileBuffer) { // Transform bytecode return classfileBuffer; } }); } }"
+  },
+  {
+    "title": "Custom Class Loaders",
+    "instructions": "Create custom class loaders for dynamic class loading and hot reloading capabilities.",
+    "hint": "class CustomClassLoader extends ClassLoader { @Override protected Class<?> findClass(String name) throws ClassNotFoundException { // Load class from custom source byte[] classBytes = loadClassBytes(name); return defineClass(name, classBytes, 0, classBytes.length); } }"
+  },
+  {
+    "title": "Java Native Interface (JNI)",
+    "instructions": "Use JNI to call native C/C++ code from Java. Create native methods and handle native libraries.",
+    "hint": "public class NativeExample { static { System.loadLibrary('native-lib'); } public native void nativeMethod(); public native String getNativeString(); }"
+  },
+  {
+    "title": "Advanced Concurrency Patterns",
+    "instructions": "Implement advanced concurrency patterns like producer-consumer, reader-writer locks, and work-stealing algorithms.",
+    "hint": "import java.util.concurrent.locks.*; class ProducerConsumer { private final Lock lock = new ReentrantLock(); private final Condition notEmpty = lock.newCondition(); private final Condition notFull = lock.newCondition(); private final Queue<Integer> queue = new LinkedList<>(); private final int capacity = 10; }"
+  },
+  {
+    "title": "Reactive Programming with Project Reactor",
+    "instructions": "Use Project Reactor for reactive programming. Create reactive streams and handle backpressure.",
+    "hint": "import reactor.core.publisher.*; Flux<Integer> flux = Flux.range(1, 10).map(i -> i * 2).filter(i -> i % 2 == 0); flux.subscribe(System.out::println); Mono<String> mono = Mono.just('Hello').map(s -> s + ' World');"
+  },
+  {
+    "title": "Microservices with Spring Boot",
+    "instructions": "Create microservices using Spring Boot. Implement REST APIs, dependency injection, and configuration management.",
+    "hint": "import org.springframework.boot.*; import org.springframework.web.bind.annotation.*; @SpringBootApplication @RestController public class MyApplication { @GetMapping('/hello') public String hello() { return 'Hello, World!'; } public static void main(String[] args) { SpringApplication.run(MyApplication.class, args); } }"
+  },
+  {
+    "title": "Database Integration with JPA/Hibernate",
+    "instructions": "Use JPA and Hibernate for object-relational mapping. Create entities and perform database operations.",
+    "hint": "import javax.persistence.*; @Entity @Table(name = 'users') public class User { @Id @GeneratedValue(strategy = GenerationType.IDENTITY) private Long id; @Column(name = 'name') private String name; // getters and setters }"
+  },
+  {
+    "title": "Testing with Mockito and TestContainers",
+    "instructions": "Write comprehensive tests using Mockito for mocking and TestContainers for integration testing.",
+    "hint": "import org.mockito.*; import org.testcontainers.containers.*; @Test void testWithMock() { UserService userService = Mockito.mock(UserService.class); Mockito.when(userService.getUser(1L)).thenReturn(new User('Alice', 25)); } @Test void testWithContainer() { @Container PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>('postgres:13'); postgres.start(); // test with real database }"
+  },
+  {
+    "title": "Performance Monitoring and Profiling",
+    "instructions": "Use JMX, JFR, and profiling tools to monitor application performance and identify bottlenecks.",
+    "hint": "import javax.management.*; import jdk.jfr.*; @Name('MyEvent') @Label('My Custom Event') @Category('Custom') class MyEvent extends jdk.jfr.Event { @Label('Value') int value; } MyEvent event = new MyEvent(); event.value = 42; event.commit();"
+  },
+  {
+    "title": "Security and Cryptography",
+    "instructions": "Implement cryptographic operations using Java Security API. Handle encryption, hashing, and digital signatures.",
+    "hint": "import java.security.*; import javax.crypto.*; KeyGenerator keyGen = KeyGenerator.getInstance('AES'); keyGen.init(256); SecretKey key = keyGen.generateKey(); Cipher cipher = Cipher.getInstance('AES/CBC/PKCS5Padding'); cipher.init(Cipher.ENCRYPT_MODE, key);"
+  },
+  {
+    "title": "Network Programming with NIO",
+    "instructions": "Use Java NIO for non-blocking network programming. Create servers and clients with high performance.",
+    "hint": "import java.nio.channels.*; import java.nio.ByteBuffer; ServerSocketChannel server = ServerSocketChannel.open(); server.bind(new InetSocketAddress(8080)); server.configureBlocking(false); Selector selector = Selector.open(); server.register(selector, SelectionKey.OP_ACCEPT);"
+  },
+  {
+    "title": "Advanced Java Features and Best Practices",
+    "instructions": "Implement advanced Java features and follow best practices for enterprise development.",
+    "hint": "// Use Optional for null safety Optional<String> optional = Optional.of('value'); // Use try-with-resources for resource management try(Connection conn = getConnection()) { // use connection } // Use var for type inference var list = new ArrayList<String>(); // Use switch expressions int result = switch(value) { case 1 -> 10; case 2 -> 20; default -> 0; };"
+  }
+] 

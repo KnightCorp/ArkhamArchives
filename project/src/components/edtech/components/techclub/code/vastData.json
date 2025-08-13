@@ -1,0 +1,1112 @@
+{
+  "practiceQuestions": [
+    {
+      "id": 1,
+      "title": "Stack vs Queue",
+      "description": "Explain the difference between a stack and a queue.",
+      "difficulty": "easy",
+      "topic": "Data Structures",
+      "hint": "Think about the order in which elements are added and removed.",
+      "solution": "A stack is LIFO (last-in, first-out), a queue is FIFO (first-in, first-out)."
+    },
+    {
+      "id": 2,
+      "title": "Binary Search Tree Properties",
+      "description": "What is a binary search tree? List its properties.",
+      "difficulty": "medium",
+      "topic": "Data Structures",
+      "hint": "Consider how elements are arranged in the tree.",
+      "solution": "A BST is a tree where each node has at most two children, and for each node, all elements in the left subtree are less, and all in the right are greater."
+    },
+    {
+      "id": 3,
+      "title": "Quicksort Algorithm",
+      "description": "Describe how quicksort works and its average time complexity.",
+      "difficulty": "hard",
+      "topic": "Algorithms",
+      "hint": "Think about partitioning and recursion.",
+      "solution": "Quicksort partitions the array around a pivot, recursively sorts subarrays. Average time complexity is O(n log n)."
+    },
+    {
+      "id": 4,
+      "title": "Linked List Cycle",
+      "description": "How do you detect a cycle in a singly linked list?",
+      "difficulty": "medium",
+      "topic": "Data Structures",
+      "hint": "Use two pointers moving at different speeds.",
+      "solution": "Use Floyd's Tortoise and Hare algorithm: two pointers, one moves one step, the other two steps. If they meet, there's a cycle."
+    },
+    {
+      "id": 5,
+      "title": "Big O Notation",
+      "description": "Explain Big O notation and give an example.",
+      "difficulty": "easy",
+      "topic": "Complexity",
+      "hint": "It's about how runtime grows with input size.",
+      "solution": "Big O describes the upper bound of an algorithm's runtime. Example: O(n) for linear search."
+    },
+    {
+      "id": 6,
+      "title": "Hash Table Collisions",
+      "description": "What is a hash table collision and how can it be handled?",
+      "difficulty": "medium",
+      "topic": "Data Structures",
+      "hint": "Think about two keys mapping to the same index.",
+      "solution": "A collision occurs when two keys hash to the same index. Handle with chaining or open addressing."
+    },
+    {
+      "id": 7,
+      "title": "Merge Sort",
+      "description": "Describe the merge sort algorithm and its time complexity.",
+      "difficulty": "medium",
+      "topic": "Algorithms",
+      "hint": "Divide and conquer.",
+      "solution": "Merge sort divides the array, sorts each half, and merges them. Time complexity is O(n log n)."
+    },
+    {
+      "id": 8,
+      "title": "Palindrome Check",
+      "description": "Write a function to check if a string is a palindrome.",
+      "difficulty": "easy",
+      "topic": "Strings",
+      "hint": "Compare characters from both ends.",
+      "solution": "Use two pointers from start and end, compare characters, move towards center."
+    },
+    {
+      "id": 9,
+      "title": "Fibonacci Sequence",
+      "description": "Write a function to compute the nth Fibonacci number.",
+      "difficulty": "easy",
+      "topic": "Recursion",
+      "hint": "Base cases and recursion.",
+      "solution": "If n <= 1 return n, else return fib(n-1) + fib(n-2)."
+    },
+    {
+      "id": 10,
+      "title": "Reverse a Linked List",
+      "description": "How do you reverse a singly linked list?",
+      "difficulty": "medium",
+      "topic": "Data Structures",
+      "hint": "Iterate and change next pointers.",
+      "solution": "Iterate through the list, reverse the next pointers as you go."
+    },
+    {
+      "id": 11,
+      "title": "Depth-First Search",
+      "description": "Explain depth-first search (DFS) in a graph.",
+      "difficulty": "medium",
+      "topic": "Algorithms",
+      "hint": "Use a stack or recursion.",
+      "solution": "DFS explores as far as possible along each branch before backtracking."
+    },
+    {
+      "id": 12,
+      "title": "Breadth-First Search",
+      "description": "Explain breadth-first search (BFS) in a graph.",
+      "difficulty": "medium",
+      "topic": "Algorithms",
+      "hint": "Use a queue.",
+      "solution": "BFS explores all neighbors at the current depth before moving to the next level."
+    },
+    {
+      "id": 13,
+      "title": "Find Minimum in Array",
+      "description": "Write a function to find the minimum element in an array.",
+      "difficulty": "easy",
+      "topic": "Arrays",
+      "hint": "Iterate and compare.",
+      "solution": "Initialize min as first element, iterate and update if a smaller element is found."
+    },
+    {
+      "id": 14,
+      "title": "Balanced Parentheses",
+      "description": "Check if a string of parentheses is balanced.",
+      "difficulty": "medium",
+      "topic": "Stacks",
+      "hint": "Use a stack to track open parentheses.",
+      "solution": "Push open parens to stack, pop for close. If stack is empty at end, it's balanced."
+    },
+    {
+      "id": 15,
+      "title": "Remove Duplicates",
+      "description": "Remove duplicates from an array.",
+      "difficulty": "easy",
+      "topic": "Arrays",
+      "hint": "Use a set or filter.",
+      "solution": "Use a set to store unique elements, or filter with indexOf."
+    },
+    {
+      "id": 16,
+      "title": "Binary Search",
+      "description": "Implement binary search on a sorted array.",
+      "difficulty": "medium",
+      "topic": "Algorithms",
+      "hint": "Divide and conquer, check middle element.",
+      "solution": "Check middle, if target is less, search left, else right. Repeat until found or range is empty."
+    },
+    {
+      "id": 17,
+      "title": "Anagram Check",
+      "description": "Check if two strings are anagrams.",
+      "difficulty": "easy",
+      "topic": "Strings",
+      "hint": "Sort or count characters.",
+      "solution": "Sort both strings and compare, or count characters and compare counts."
+    },
+    {
+      "id": 18,
+      "title": "Find Intersection",
+      "description": "Find the intersection of two arrays.",
+      "difficulty": "medium",
+      "topic": "Arrays",
+      "hint": "Use a set for fast lookup.",
+      "solution": "Store elements of one array in a set, check each element of the other for membership."
+    },
+    {
+      "id": 19,
+      "title": "LRU Cache",
+      "description": "Design a data structure for LRU cache.",
+      "difficulty": "hard",
+      "topic": "Data Structures",
+      "hint": "Use a hash map and doubly linked list.",
+      "solution": "Hash map for O(1) access, doubly linked list for O(1) eviction."
+    },
+    {
+      "id": 20,
+      "title": "Dijkstra's Algorithm",
+      "description": "Explain Dijkstra's algorithm for shortest path.",
+      "difficulty": "hard",
+      "topic": "Algorithms",
+      "hint": "Use a priority queue.",
+      "solution": "Maintain distances, use priority queue to pick next node with smallest distance."
+    },
+    {
+      "id": 21,
+      "title": "Two Sum Problem",
+      "description": "Find two numbers in an array that add up to a target.",
+      "difficulty": "easy",
+      "topic": "Arrays",
+      "hint": "Use a hash map to store complements.",
+      "solution": "Use hash map to store target - current element. If complement exists, we found the pair."
+    },
+    {
+      "id": 22,
+      "title": "Valid Anagram",
+      "description": "Check if two strings are valid anagrams.",
+      "difficulty": "easy",
+      "topic": "Strings",
+      "hint": "Count character frequencies.",
+      "solution": "Count characters in both strings and compare the counts."
+    },
+    {
+      "id": 23,
+      "title": "Climbing Stairs",
+      "description": "How many ways to climb n stairs if you can take 1 or 2 steps?",
+      "difficulty": "medium",
+      "topic": "Dynamic Programming",
+      "hint": "Think about Fibonacci sequence.",
+      "solution": "Use dynamic programming: ways(n) = ways(n-1) + ways(n-2)."
+    },
+    {
+      "id": 24,
+      "title": "Maximum Subarray",
+      "description": "Find the contiguous subarray with the largest sum.",
+      "difficulty": "medium",
+      "topic": "Arrays",
+      "hint": "Use Kadane's algorithm.",
+      "solution": "Keep track of current sum and max sum. Reset current sum if it becomes negative."
+    },
+    {
+      "id": 25,
+      "title": "Valid Parentheses",
+      "description": "Check if a string of parentheses is valid.",
+      "difficulty": "easy",
+      "topic": "Stacks",
+      "hint": "Use a stack to match opening and closing brackets.",
+      "solution": "Push opening brackets, pop and check when encountering closing brackets."
+    },
+    {
+      "id": 26,
+      "title": "Merge Two Sorted Lists",
+      "description": "Merge two sorted linked lists into one sorted list.",
+      "difficulty": "easy",
+      "topic": "Linked Lists",
+      "hint": "Compare nodes and link them in order.",
+      "solution": "Compare heads of both lists, link smaller one, move pointer forward."
+    },
+    {
+      "id": 27,
+      "title": "Best Time to Buy and Sell Stock",
+      "description": "Find the maximum profit from buying and selling stock once.",
+      "difficulty": "easy",
+      "topic": "Arrays",
+      "hint": "Keep track of minimum price seen so far.",
+      "solution": "Track minimum price and update max profit as we iterate."
+    },
+    {
+      "id": 28,
+      "title": "Valid Palindrome",
+      "description": "Check if a string is a palindrome, ignoring non-alphanumeric characters.",
+      "difficulty": "easy",
+      "topic": "Strings",
+      "hint": "Use two pointers and skip non-alphanumeric characters.",
+      "solution": "Use two pointers, skip non-alphanumeric, compare characters."
+    },
+    {
+      "id": 29,
+      "title": "Invert Binary Tree",
+      "description": "Invert a binary tree (mirror image).",
+      "difficulty": "easy",
+      "topic": "Trees",
+      "hint": "Swap left and right children recursively.",
+      "solution": "Recursively swap left and right children of each node."
+    },
+    {
+      "id": 30,
+      "title": "Move Zeroes",
+      "description": "Move all zeroes to the end while maintaining relative order.",
+      "difficulty": "easy",
+      "topic": "Arrays",
+      "hint": "Use two pointers technique.",
+      "solution": "Use two pointers: one for current position, one for next non-zero."
+    },
+    {
+      "id": 31,
+      "title": "Symmetric Tree",
+      "description": "Check if a binary tree is symmetric around its center.",
+      "difficulty": "easy",
+      "topic": "Trees",
+      "hint": "Compare left subtree with right subtree.",
+      "solution": "Recursively compare left.left with right.right and left.right with right.left."
+    },
+    {
+      "id": 32,
+      "title": "Missing Number",
+      "description": "Find the missing number in an array of 0 to n.",
+      "difficulty": "easy",
+      "topic": "Arrays",
+      "hint": "Use sum formula or XOR.",
+      "solution": "Calculate expected sum (n*(n+1)/2) and subtract actual sum, or use XOR."
+    },
+    {
+      "id": 33,
+      "title": "First Bad Version",
+      "description": "Find the first bad version using binary search.",
+      "difficulty": "easy",
+      "topic": "Binary Search",
+      "hint": "Use binary search to find the transition point.",
+      "solution": "Binary search: if middle is bad, search left half, else search right half."
+    },
+    {
+      "id": 34,
+      "title": "Ransom Note",
+      "description": "Check if ransom note can be constructed from magazine.",
+      "difficulty": "easy",
+      "topic": "Strings",
+      "hint": "Count character frequencies.",
+      "solution": "Count characters in magazine, check if ransom note can be formed."
+    },
+    {
+      "id": 35,
+      "title": "Climbing Stairs",
+      "description": "How many ways to climb n stairs with 1 or 2 steps?",
+      "difficulty": "easy",
+      "topic": "Dynamic Programming",
+      "hint": "This is the Fibonacci sequence.",
+      "solution": "Use dynamic programming: dp[i] = dp[i-1] + dp[i-2]."
+    },
+    {
+      "id": 36,
+      "title": "Longest Substring Without Repeating Characters",
+      "description": "Find length of longest substring without repeating characters.",
+      "difficulty": "medium",
+      "topic": "Strings",
+      "hint": "Use sliding window technique.",
+      "solution": "Use sliding window with hash set to track unique characters."
+    },
+    {
+      "id": 37,
+      "title": "Container With Most Water",
+      "description": "Find two lines that together with x-axis forms container with most water.",
+      "difficulty": "medium",
+      "topic": "Arrays",
+      "hint": "Use two pointers from both ends.",
+      "solution": "Start with widest container, move pointer with shorter line inward."
+    },
+    {
+      "id": 38,
+      "title": "3Sum",
+      "description": "Find all unique triplets that sum to zero.",
+      "difficulty": "medium",
+      "topic": "Arrays",
+      "hint": "Sort array and use two pointers.",
+      "solution": "Sort array, fix one number, use two pointers for remaining two numbers."
+    },
+    {
+      "id": 39,
+      "title": "Remove Nth Node From End of List",
+      "description": "Remove the nth node from the end of a linked list.",
+      "difficulty": "medium",
+      "topic": "Linked Lists",
+      "hint": "Use two pointers with n distance apart.",
+      "solution": "Use two pointers: fast pointer moves n steps ahead, then move both together."
+    },
+    {
+      "id": 40,
+      "title": "Valid Sudoku",
+      "description": "Check if a 9x9 Sudoku board is valid.",
+      "difficulty": "medium",
+      "topic": "Arrays",
+      "hint": "Check rows, columns, and 3x3 boxes separately.",
+      "solution": "Use hash sets to check for duplicates in rows, columns, and boxes."
+    },
+    {
+      "id": 41,
+      "title": "Spiral Matrix",
+      "description": "Return all elements of matrix in spiral order.",
+      "difficulty": "medium",
+      "topic": "Arrays",
+      "hint": "Use four boundaries to track spiral direction.",
+      "solution": "Use four variables for boundaries, traverse in spiral pattern."
+    },
+    {
+      "id": 42,
+      "title": "Jump Game",
+      "description": "Determine if you can reach the last index.",
+      "difficulty": "medium",
+      "topic": "Arrays",
+      "hint": "Track the maximum reachable position.",
+      "solution": "Keep track of maximum reachable position, return false if current position exceeds it."
+    },
+    {
+      "id": 43,
+      "title": "Merge Intervals",
+      "description": "Merge overlapping intervals.",
+      "difficulty": "medium",
+      "topic": "Arrays",
+      "hint": "Sort intervals by start time.",
+      "solution": "Sort by start time, merge overlapping intervals by comparing with last merged interval."
+    },
+    {
+      "id": 44,
+      "title": "Unique Paths",
+      "description": "Find number of unique paths from top-left to bottom-right.",
+      "difficulty": "medium",
+      "topic": "Dynamic Programming",
+      "hint": "Use dynamic programming with 2D array.",
+      "solution": "dp[i][j] = dp[i-1][j] + dp[i][j-1], initialize first row and column to 1."
+    },
+    {
+      "id": 45,
+      "title": "Minimum Path Sum",
+      "description": "Find path from top-left to bottom-right with minimum sum.",
+      "difficulty": "medium",
+      "topic": "Dynamic Programming",
+      "hint": "Use dynamic programming to find minimum path.",
+      "solution": "dp[i][j] = min(dp[i-1][j], dp[i][j-1]) + grid[i][j]."
+    },
+    {
+      "id": 46,
+      "title": "Word Search",
+      "description": "Find if word exists in 2D board.",
+      "difficulty": "medium",
+      "topic": "Backtracking",
+      "hint": "Use DFS with backtracking.",
+      "solution": "Use DFS for each cell, backtrack when path doesn't lead to solution."
+    },
+    {
+      "id": 47,
+      "title": "Sort Colors",
+      "description": "Sort array of 0s, 1s, and 2s in-place.",
+      "difficulty": "medium",
+      "topic": "Arrays",
+      "hint": "Use three pointers technique.",
+      "solution": "Use three pointers: one for 0s, one for 1s, one for current position."
+    },
+    {
+      "id": 48,
+      "title": "Subsets",
+      "description": "Generate all possible subsets of distinct integers.",
+      "difficulty": "medium",
+      "topic": "Backtracking",
+      "hint": "Use backtracking to generate all combinations.",
+      "solution": "Use backtracking: for each element, choose to include or exclude it."
+    },
+    {
+      "id": 49,
+      "title": "Word Break",
+      "description": "Check if string can be segmented into dictionary words.",
+      "difficulty": "medium",
+      "topic": "Dynamic Programming",
+      "hint": "Use dynamic programming with boolean array.",
+      "solution": "dp[i] = true if substring ending at i can be broken into words."
+    },
+    {
+      "id": 50,
+      "title": "House Robber",
+      "description": "Find maximum amount of money you can rob without alerting police.",
+      "difficulty": "medium",
+      "topic": "Dynamic Programming",
+      "hint": "Use dynamic programming with two states.",
+      "solution": "dp[i] = max(dp[i-1], dp[i-2] + nums[i])."
+    },
+    {
+      "id": 51,
+      "title": "Find the Majority Element",
+      "description": "Given an array of size n, find the majority element.",
+      "difficulty": "medium",
+      "topic": "Arrays",
+      "hint": "Use a hash map or Boyer-Moore Voting Algorithm.",
+      "solution": "Count occurrences of each element, or use Boyer-Moore Voting Algorithm to find the majority element."
+    },
+    {
+      "id": 52,
+      "title": "Implement a Min Stack",
+      "description": "Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.",
+      "difficulty": "hard",
+      "topic": "Stacks",
+      "hint": "Use an auxiliary stack to keep track of minimums.",
+      "solution": "Maintain two stacks: one for all values, one for current minimums."
+    },
+    {
+      "id": 53,
+      "title": "Longest Palindromic Substring",
+      "description": "Find the longest palindromic substring in a given string.",
+      "difficulty": "hard",
+      "topic": "Strings",
+      "hint": "Expand around center or use dynamic programming.",
+      "solution": "Expand around each character as center, or use DP to track palindromes."
+    }
+  ],
+  "mockInterviews": [
+    {
+      "id": 1,
+      "title": "Software Engineer Mock Interview",
+      "description": "General software engineering concepts and algorithms",
+      "duration": "45 minutes",
+      "difficulty": "medium",
+      "questions": [1, 4, 7, 10, 13, 16, 19, 21, 24, 27]
+    },
+    {
+      "id": 2,
+      "title": "Data Structures Mock Interview",
+      "description": "Focus on data structures and their implementations",
+      "duration": "45 minutes",
+      "difficulty": "medium",
+      "questions": [2, 6, 9, 12, 15, 18, 20, 26, 29, 31]
+    },
+    {
+      "id": 3,
+      "title": "Algorithm Design Mock Interview",
+      "description": "Advanced algorithm design and optimization",
+      "duration": "60 minutes",
+      "difficulty": "hard",
+      "questions": [3, 8, 11, 14, 17, 22, 25, 28, 30, 32]
+    },
+    {
+      "id": 4,
+      "title": "Frontend Developer Mock Interview",
+      "description": "JavaScript, DOM manipulation, and web technologies",
+      "duration": "45 minutes",
+      "difficulty": "medium",
+      "questions": [5, 8, 15, 17, 22, 25, 28, 30, 33, 34]
+    },
+    {
+      "id": 5,
+      "title": "Backend Developer Mock Interview",
+      "description": "System design, databases, and backend concepts",
+      "duration": "60 minutes",
+      "difficulty": "hard",
+      "questions": [6, 19, 20, 23, 36, 37, 38, 39, 40, 41]
+    },
+    {
+      "id": 6,
+      "title": "Entry Level Mock Interview",
+      "description": "Basic concepts for entry-level positions",
+      "duration": "30 minutes",
+      "difficulty": "easy",
+      "questions": [1, 5, 8, 13, 15, 17, 21, 22, 27, 28]
+    },
+    {
+      "id": 7,
+      "title": "Senior Level Mock Interview",
+      "description": "Advanced concepts for senior positions",
+      "duration": "75 minutes",
+      "difficulty": "hard",
+      "questions": [3, 19, 20, 36, 37, 38, 39, 40, 41, 42]
+    },
+    {
+      "id": 8,
+      "title": "System Design Mock Interview",
+      "description": "System design and architecture questions",
+      "duration": "90 minutes",
+      "difficulty": "hard",
+      "questions": [19, 20, 36, 37, 38, 39, 40, 41, 42, 43]
+    },
+    {
+      "id": 9,
+      "title": "Full Stack Developer Mock Interview",
+      "description": "Covers frontend, backend, and database concepts.",
+      "duration": "75 minutes",
+      "difficulty": "hard",
+      "questions": [5, 8, 15, 17, 22, 25, 28, 30, 51, 52]
+    },
+    {
+      "id": 10,
+      "title": "Data Science Mock Interview",
+      "description": "Focus on algorithms, data analysis, and statistics.",
+      "duration": "60 minutes",
+      "difficulty": "medium",
+      "questions": [2, 6, 9, 12, 18, 20, 24, 27, 53, 13]
+    }
+  ],
+  "tips": [
+    "Read the question carefully before starting to code.",
+    "Communicate your thought process clearly.",
+    "Write clean and maintainable code.",
+    "Test your code with edge cases.",
+    "Always ask clarifying questions before starting.",
+    "Start with a brute force solution, then optimize.",
+    "Consider time and space complexity.",
+    "Use meaningful variable names.",
+    "Handle edge cases explicitly.",
+    "Practice explaining your solutions out loud.",
+    "Learn common patterns and algorithms.",
+    "Practice coding without an IDE.",
+    "Review your code before submitting.",
+    "Stay calm and think systematically.",
+    "Don't be afraid to ask for hints.",
+    "Practice with a timer to build speed.",
+    "Learn from your mistakes and review solutions.",
+    "Focus on problem-solving, not memorization.",
+    "Practice with different difficulty levels.",
+    "Build a strong foundation in data structures.",
+    "Understand Big O notation thoroughly.",
+    "Practice system design questions.",
+    "Learn to estimate time complexity quickly.",
+    "Practice whiteboard coding regularly.",
+    "Stay updated with industry trends.",
+    "Network with other developers.",
+    "Build a portfolio of projects.",
+    "Contribute to open source projects.",
+    "Practice behavioral questions as well.",
+    "Prepare questions to ask the interviewer.",
+    "Follow up after interviews.",
+    "Learn from each interview experience.",
+    "Stay persistent and keep practicing.",
+    "Focus on continuous learning.",
+    "Build problem-solving intuition.",
+    "Practice with real interview questions.",
+    "Learn to handle pressure effectively.",
+    "Develop a systematic approach to problems.",
+    "Practice explaining complex concepts simply.",
+    "Learn to identify problem patterns quickly.",
+    "Build confidence through consistent practice.",
+    "Stay organized with your study plan.",
+    "Track your progress and weaknesses.",
+    "Focus on your strengths while improving weaknesses.",
+    "Practice with different programming languages.",
+    "Learn to debug efficiently.",
+    "Understand common interview formats.",
+    "Practice with mock interviews regularly.",
+    "Learn to handle rejection gracefully.",
+    "Stay motivated and persistent.",
+    "Celebrate small wins and progress."
+  ],
+  "resources": [
+    {
+      "title": "LeetCode",
+      "url": "https://leetcode.com/",
+      "description": "The most popular platform for coding interview preparation with 2000+ problems",
+      "category": "Practice Platform"
+    },
+    {
+      "title": "GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/",
+      "description": "Comprehensive resource for algorithms, data structures, and interview preparation",
+      "category": "Learning Resource"
+    },
+    {
+      "title": "InterviewBit",
+      "url": "https://www.interviewbit.com/",
+      "description": "Structured learning path for coding interviews with company-specific questions",
+      "category": "Practice Platform"
+    },
+    {
+      "title": "HackerRank",
+      "url": "https://www.hackerrank.com/",
+      "description": "Practice coding challenges and participate in competitions",
+      "category": "Practice Platform"
+    },
+    {
+      "title": "CodeSignal",
+      "url": "https://codesignal.com/",
+      "description": "Technical assessment platform used by many companies",
+      "category": "Assessment Platform"
+    },
+    {
+      "title": "Cracking the Coding Interview",
+      "url": "https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850",
+      "description": "The definitive guide for technical interview preparation",
+      "category": "Book"
+    },
+    {
+      "title": "System Design Primer",
+      "url": "https://github.com/donnemartin/system-design-primer",
+      "description": "Learn how to design large-scale systems",
+      "category": "System Design"
+    },
+    {
+      "title": "Algorithms, Part I",
+      "url": "https://www.coursera.org/learn/algorithms-part1",
+      "description": "Princeton's algorithms course on Coursera",
+      "category": "Course"
+    },
+    {
+      "title": "MIT OpenCourseWare - Introduction to Algorithms",
+      "url": "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/",
+      "description": "Free algorithms course from MIT",
+      "category": "Course"
+    },
+    {
+      "title": "Visualgo",
+      "url": "https://visualgo.net/",
+      "description": "Visual learning of algorithms and data structures",
+      "category": "Visual Learning"
+    },
+    {
+      "title": "Big-O Complexity Chart",
+      "url": "https://www.bigocheatsheet.com/",
+      "description": "Quick reference for algorithm complexity",
+      "category": "Reference"
+    },
+    {
+      "title": "Tech Interview Handbook",
+      "url": "https://www.techinterviewhandbook.org/",
+      "description": "Free curated interview preparation materials",
+      "category": "Handbook"
+    },
+    {
+      "title": "Interviewing.io",
+      "url": "https://interviewing.io/",
+      "description": "Practice technical interviews with real engineers",
+      "category": "Mock Interviews"
+    },
+    {
+      "title": "Pramp",
+      "url": "https://www.pramp.com/",
+      "description": "Free peer-to-peer mock interviews",
+      "category": "Mock Interviews"
+    },
+    {
+      "title": "Grokking the System Design Interview",
+      "url": "https://www.educative.io/courses/grokking-the-system-design-interview",
+      "description": "Comprehensive system design interview preparation",
+      "category": "System Design"
+    },
+    {
+      "title": "Designing Data-Intensive Applications",
+      "url": "https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321",
+      "description": "Essential book for system design and distributed systems",
+      "category": "Book"
+    },
+    {
+      "title": "Clean Code",
+      "url": "https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350884",
+      "description": "Learn to write clean, maintainable code",
+      "category": "Book"
+    },
+    {
+      "title": "Effective Java",
+      "url": "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997",
+      "description": "Best practices for Java programming",
+      "category": "Book"
+    },
+    {
+      "title": "JavaScript: The Good Parts",
+      "url": "https://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742",
+      "description": "Essential JavaScript concepts and best practices",
+      "category": "Book"
+    },
+    {
+      "title": "Python Documentation",
+      "url": "https://docs.python.org/3/",
+      "description": "Official Python documentation and tutorials",
+      "category": "Documentation"
+    },
+    {
+      "title": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/",
+      "description": "Comprehensive web development documentation",
+      "category": "Documentation"
+    },
+    {
+      "title": "Stack Overflow",
+      "url": "https://stackoverflow.com/",
+      "description": "Q&A platform for programming questions",
+      "category": "Community"
+    },
+    {
+      "title": "Reddit - r/cscareerquestions",
+      "url": "https://www.reddit.com/r/cscareerquestions/",
+      "description": "Community for career advice and interview tips",
+      "category": "Community"
+    },
+    {
+      "title": "Blind",
+      "url": "https://www.teamblind.com/",
+      "description": "Anonymous workplace and interview discussions",
+      "category": "Community"
+    },
+    {
+      "title": "Glassdoor",
+      "url": "https://www.glassdoor.com/",
+      "description": "Company reviews and interview experiences",
+      "category": "Company Research"
+    },
+    {
+      "title": "Levels.fyi",
+      "url": "https://www.levels.fyi/",
+      "description": "Salary and level information for tech companies",
+      "category": "Salary Data"
+    },
+    {
+      "title": "Interview Cake",
+      "url": "https://www.interviewcake.com/",
+      "description": "Step-by-step interview preparation with explanations",
+      "category": "Practice Platform"
+    },
+    {
+      "title": "AlgoExpert",
+      "url": "https://www.algoexpert.io/",
+      "description": "Video explanations for coding interview problems",
+      "category": "Practice Platform"
+    },
+    {
+      "title": "Back To Back SWE",
+      "url": "https://backtobackswe.com/",
+      "description": "YouTube channel with coding interview solutions",
+      "category": "Video Content"
+    },
+    {
+      "title": "Tushar Roy - Coding Made Simple",
+      "url": "https://www.youtube.com/user/tusharroy2525",
+      "description": "YouTube channel with algorithm explanations",
+      "category": "Video Content"
+    },
+    {
+      "title": "William Fiset",
+      "url": "https://www.youtube.com/user/purpongie",
+      "description": "YouTube channel with data structure and algorithm tutorials",
+      "category": "Video Content"
+    },
+    {
+      "title": "MIT 6.006 Introduction to Algorithms",
+      "url": "https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb",
+      "description": "Complete algorithms course from MIT",
+      "category": "Video Content"
+    },
+    {
+      "title": "Stanford CS106B Programming Abstractions",
+      "url": "https://www.youtube.com/playlist?list=PLFE6E58F856038C69",
+      "description": "Programming and data structures course",
+      "category": "Video Content"
+    },
+    {
+      "title": "GitHub - Awesome Interview Questions",
+      "url": "https://github.com/DopplerHQ/awesome-interview-questions",
+      "description": "Curated list of interview questions by topic",
+      "category": "Question Bank"
+    },
+    {
+      "title": "GitHub - Tech Interview Guide",
+      "url": "https://github.com/yangshun/tech-interview-handbook",
+      "description": "Comprehensive interview preparation guide",
+      "category": "Handbook"
+    },
+    {
+      "title": "GitHub - System Design Interview",
+      "url": "https://github.com/shashank88/system_design",
+      "description": "System design interview questions and solutions",
+      "category": "System Design"
+    },
+    {
+      "title": "GitHub - Algorithm Visualizer",
+      "url": "https://github.com/algorithm-visualizer/algorithm-visualizer",
+      "description": "Interactive algorithm visualization tool",
+      "category": "Visual Learning"
+    },
+    {
+      "title": "GitHub - Competitive Programming",
+      "url": "https://github.com/lnishan/awesome-competitive-programming",
+      "description": "Resources for competitive programming",
+      "category": "Competitive Programming"
+    },
+    {
+      "title": "Codeforces",
+      "url": "https://codeforces.com/",
+      "description": "Competitive programming platform with contests",
+      "category": "Competitive Programming"
+    },
+    {
+      "title": "AtCoder",
+      "url": "https://atcoder.jp/",
+      "description": "Japanese competitive programming platform",
+      "category": "Competitive Programming"
+    },
+    {
+      "title": "TopCoder",
+      "url": "https://www.topcoder.com/",
+      "description": "Competitive programming and algorithm challenges",
+      "category": "Competitive Programming"
+    },
+    {
+      "title": "Project Euler",
+      "url": "https://projecteuler.net/",
+      "description": "Mathematical and computational problems",
+      "category": "Practice Platform"
+    },
+    {
+      "title": "Rosalind",
+      "url": "http://rosalind.info/",
+      "description": "Bioinformatics problems and algorithms",
+      "category": "Practice Platform"
+    },
+    {
+      "title": "Exercism",
+      "url": "https://exercism.org/",
+      "description": "Learn programming languages through exercises",
+      "category": "Learning Platform"
+    },
+    {
+      "title": "Codewars",
+      "url": "https://www.codewars.com/",
+      "description": "Learn programming through kata challenges",
+      "category": "Practice Platform"
+    },
+    {
+      "title": "HackerEarth",
+      "url": "https://www.hackerearth.com/",
+      "description": "Programming challenges and hiring platform",
+      "category": "Practice Platform"
+    },
+    {
+      "title": "SPOJ",
+      "url": "https://www.spoj.com/",
+      "description": "Programming problems archive",
+      "category": "Practice Platform"
+    },
+    {
+      "title": "UVa Online Judge",
+      "url": "https://onlinejudge.org/",
+      "description": "Programming problems from ACM-ICPC",
+      "category": "Practice Platform"
+    },
+    {
+      "title": "Kattis",
+      "url": "https://open.kattis.com/",
+      "description": "Programming problems and contests",
+      "category": "Practice Platform"
+    },
+    {
+      "title": "CSES Problem Set",
+      "url": "https://cses.fi/problemset/",
+      "description": "Comprehensive problem set for learning algorithms",
+      "category": "Practice Platform"
+    },
+    {
+      "title": "Advent of Code",
+      "url": "https://adventofcode.com/",
+      "description": "Annual programming challenges in December",
+      "category": "Practice Platform"
+    },
+    {
+      "title": "Google Code Jam",
+      "url": "https://codingcompetitions.withgoogle.com/codejam",
+      "description": "Google's annual coding competition",
+      "category": "Competition"
+    },
+    {
+      "title": "Facebook Hacker Cup",
+      "url": "https://www.facebook.com/hackercup/",
+      "description": "Facebook's annual coding competition",
+      "category": "Competition"
+    },
+    {
+      "title": "ACM-ICPC",
+      "url": "https://icpc.global/",
+      "description": "International Collegiate Programming Contest",
+      "category": "Competition"
+    },
+    {
+      "title": "Google Kick Start",
+      "url": "https://codingcompetitions.withgoogle.com/kickstart",
+      "description": "Google's coding competition for students",
+      "category": "Competition"
+    },
+    {
+      "title": "Hash Code",
+      "url": "https://codingcompetitions.withgoogle.com/hashcode",
+      "description": "Google's team-based coding competition",
+      "category": "Competition"
+    }
+  ],
+  "progress": {
+    "questionsAttempted": 0,
+    "questionsCorrect": 0,
+    "totalQuestions": 50,
+    "mockInterviewsCompleted": 0,
+    "totalMockInterviews": 8,
+    "streakDays": 0,
+    "totalPracticeTime": "0h",
+    "weakestTopics": [],
+    "strongestTopics": [],
+    "nextGoal": "Start your first mock interview!",
+    "accuracy": 0,
+    "averageTimePerQuestion": "0 minutes"
+  },
+  "studyPlans": [
+    {
+      "id": 1,
+      "title": "Beginner's Path",
+      "description": "For those new to coding interviews",
+      "duration": "8 weeks",
+      "topics": ["Basic Data Structures", "Simple Algorithms", "Problem Solving"],
+      "questions": [1, 5, 8, 13, 15, 17, 21, 22, 27, 28]
+    },
+    {
+      "id": 2,
+      "title": "Intermediate Preparation",
+      "description": "For experienced programmers",
+      "duration": "12 weeks",
+      "topics": ["Advanced Data Structures", "Algorithm Design", "System Design Basics"],
+      "questions": [2, 6, 9, 12, 14, 16, 18, 24, 26, 29]
+    },
+    {
+      "id": 3,
+      "title": "Advanced Mastery",
+      "description": "For senior-level positions",
+      "duration": "16 weeks",
+      "topics": ["Complex Algorithms", "System Design", "Architecture"],
+      "questions": [3, 19, 20, 36, 37, 38, 39, 40, 41, 42]
+    },
+    {
+      "id": 4,
+      "title": "Frontend Focus",
+      "description": "For frontend developer positions",
+      "duration": "6 weeks",
+      "topics": ["JavaScript", "DOM", "Web Technologies", "Basic Algorithms"],
+      "questions": [5, 8, 15, 17, 22, 25, 28, 30, 33, 34]
+    },
+    {
+      "id": 5,
+      "title": "Backend Focus",
+      "description": "For backend developer positions",
+      "duration": "10 weeks",
+      "topics": ["System Design", "Databases", "Distributed Systems", "Algorithms"],
+      "questions": [6, 19, 20, 23, 36, 37, 38, 39, 40, 41]
+    },
+    {
+      "id": 6,
+      "title": "Data Science Track",
+      "description": "For aspiring data scientists.",
+      "duration": "14 weeks",
+      "topics": ["Statistics", "Data Analysis", "Machine Learning", "Algorithms"],
+      "questions": [2, 6, 9, 12, 18, 20, 24, 27, 53, 13]
+    },
+    {
+      "id": 7,
+      "title": "Competitive Programming Sprint",
+      "description": "Sharpen your skills for coding competitions.",
+      "duration": "8 weeks",
+      "topics": ["Dynamic Programming", "Greedy", "Graphs", "Math"],
+      "questions": [3, 7, 11, 14, 16, 19, 21, 23, 44, 47]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Arrays",
+      "questionCount": 8,
+      "difficulty": "medium",
+      "description": "Fundamental data structure for storing elements"
+    },
+    {
+      "name": "Strings",
+      "questionCount": 6,
+      "difficulty": "medium",
+      "description": "Text manipulation and pattern matching"
+    },
+    {
+      "name": "Linked Lists",
+      "questionCount": 4,
+      "difficulty": "medium",
+      "description": "Linear data structure with dynamic memory allocation"
+    },
+    {
+      "name": "Trees",
+      "questionCount": 5,
+      "difficulty": "hard",
+      "description": "Hierarchical data structure"
+    },
+    {
+      "name": "Graphs",
+      "questionCount": 3,
+      "difficulty": "hard",
+      "description": "Network of nodes and edges"
+    },
+    {
+      "name": "Dynamic Programming",
+      "questionCount": 6,
+      "difficulty": "hard",
+      "description": "Optimization technique using memoization"
+    },
+    {
+      "name": "Backtracking",
+      "questionCount": 3,
+      "difficulty": "hard",
+      "description": "Systematic search for solutions"
+    },
+    {
+      "name": "Binary Search",
+      "questionCount": 2,
+      "difficulty": "medium",
+      "description": "Efficient search in sorted arrays"
+    },
+    {
+      "name": "Stacks",
+      "questionCount": 2,
+      "difficulty": "easy",
+      "description": "LIFO data structure"
+    },
+    {
+      "name": "Queues",
+      "questionCount": 1,
+      "difficulty": "easy",
+      "description": "FIFO data structure"
+    },
+    {
+      "name": "Hash Tables",
+      "questionCount": 2,
+      "difficulty": "medium",
+      "description": "Key-value storage with O(1) access"
+    },
+    {
+      "name": "Heaps",
+      "questionCount": 1,
+      "difficulty": "medium",
+      "description": "Priority queue implementation"
+    },
+    {
+      "name": "System Design",
+      "questionCount": 4,
+      "difficulty": "hard",
+      "description": "Large-scale system architecture"
+    },
+    {
+      "name": "Complexity Analysis",
+      "questionCount": 2,
+      "difficulty": "medium",
+      "description": "Time and space complexity analysis"
+    }
+  ]
+} 

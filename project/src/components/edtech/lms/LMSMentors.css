@@ -1,0 +1,175 @@
+/* LMS Mentors Styles */
+@keyframes matrix-rain {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+}
+
+.subtle-glow {
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.chrome-text {
+  background: linear-gradient(45deg, #ffffff, #c0c0c0, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.white-glow {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1),
+    inset 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.white-glow-strong {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2),
+    inset 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.silver {
+  color: #c0c0c0;
+}
+
+.silver-glow {
+  text-shadow: 0 0 10px rgba(192, 192, 192, 0.5);
+}
+
+.text-silver {
+  color: #c0c0c0;
+}
+
+.border-silver {
+  border-color: #c0c0c0;
+}
+
+.bg-silver {
+  background-color: #c0c0c0;
+}
+
+/* Trending topics chrome styling */
+.trending-tag {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(192, 192, 192, 0.1)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+.trending-tag:hover {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(192, 192, 192, 0.2)
+  );
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.chrome-button {
+  background: linear-gradient(45deg, #ffffff, #c0c0c0, #ffffff);
+  background-size: 200px 100%;
+  animation: shimmer 2s infinite;
+  color: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.chrome-button:hover {
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.black-glass {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.terminal-cursor::after {
+  content: "_";
+  animation: blink 1s infinite;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.card-image {
+  filter: grayscale(100%) contrast(1.2) brightness(0.8);
+  opacity: 0.6;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Video background styles */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+  z-index: -1;
+}

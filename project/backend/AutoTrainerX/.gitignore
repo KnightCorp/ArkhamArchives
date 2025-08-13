@@ -1,0 +1,12 @@
+.env
+
+# .gitignore
+__pycache__/
+*.pyc
+.idea/
+.DS_Store
+23w123
+.vscode
+Itachi
+logs
+uploads

@@ -1,0 +1,29 @@
+/* Add to existing effects.css */
+.marble-texture {
+  position: relative;
+  overflow: hidden;
+}
+
+.marble-texture::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1517329782449-810562a4ec2f?w=1920&h=1080&fit=crop');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.03;
+  mix-blend-mode: overlay;
+}
+
+.marble-texture::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.05) 45%,
+    transparent 60%
+  );
+  pointer-events: none;
+}

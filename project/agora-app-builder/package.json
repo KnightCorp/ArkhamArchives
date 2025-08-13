@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "agora-app-builder-cli": "3.1.6-2"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "name": "agora-app-builder",
+  "scripts": {
+    "start": "agora-app-builder-cli",
+    "start:info": "agora-app-builder-cli --info",
+    "dev": "agora-app-builder-cli"
+  },
+  "version": "1.0.0"
+}

@@ -1,0 +1,257 @@
+[
+  {
+    "title": "Your First Python Program",
+    "instructions": "Write a Python program that prints 'Hello, World!' to the console. Use the print() function with a string inside quotes.",
+    "hint": "print('Hello, World!')"
+  },
+  {
+    "title": "Variables and Basic Data Types",
+    "instructions": "Create variables for different data types: an integer (age = 25), a float (height = 5.9), a string (name = 'Alice'), and a boolean (is_student = True). Print each variable.",
+    "hint": "age = 25; height = 5.9; name = 'Alice'; is_student = True; print(age, height, name, is_student)"
+  },
+  {
+    "title": "String Operations and Methods",
+    "instructions": "Create a string 'hello world' and demonstrate: converting to uppercase, getting length, splitting into words, replacing 'world' with 'python', and checking if it starts with 'hello'.",
+    "hint": "text = 'hello world'; print(text.upper(), len(text), text.split(), text.replace('world', 'python'), text.startswith('hello'))"
+  },
+  {
+    "title": "Input and Type Conversion",
+    "instructions": "Ask the user for their name and age using input(). Convert age to integer. Print a message like 'Hello [name], you are [age] years old'.",
+    "hint": "name = input('Enter your name: '); age = int(input('Enter your age: ')); print(f'Hello {name}, you are {age} years old')"
+  },
+  {
+    "title": "Arithmetic Operations and Math",
+    "instructions": "Perform basic arithmetic: addition, subtraction, multiplication, division, floor division, modulo, and exponentiation. Also import math module and use sqrt() and pow().",
+    "hint": "import math; a, b = 10, 3; print(a+b, a-b, a*b, a/b, a//b, a%b, a**b, math.sqrt(a), math.pow(a, b))"
+  },
+  {
+    "title": "Lists - Creation and Basic Operations",
+    "instructions": "Create a list with numbers 1-5. Add 6 to the end, insert 0 at the beginning, remove 3, and print the list. Also demonstrate len(), max(), min(), and sum().",
+    "hint": "numbers = [1,2,3,4,5]; numbers.append(6); numbers.insert(0, 0); numbers.remove(3); print(numbers, len(numbers), max(numbers), min(numbers), sum(numbers))"
+  },
+  {
+    "title": "List Comprehensions and Slicing",
+    "instructions": "Create a list of numbers 1-10. Use slicing to get first 5, last 3, and every other number. Create a new list with squares of even numbers using list comprehension.",
+    "hint": "nums = list(range(1,11)); print(nums[:5], nums[-3:], nums[::2]); squares = [x**2 for x in nums if x%2==0]"
+  },
+  {
+    "title": "Tuples and Sets",
+    "instructions": "Create a tuple with coordinates (3, 4) and a set with unique numbers. Demonstrate tuple unpacking and set operations (union, intersection, difference).",
+    "hint": "coords = (3, 4); x, y = coords; unique_nums = {1,2,2,3,3,4}; print(x, y, unique_nums)"
+  },
+  {
+    "title": "Dictionaries - Creation and Access",
+    "instructions": "Create a dictionary for a person with keys 'name', 'age', 'city'. Add 'email' key, update age, and demonstrate get() method with default value.",
+    "hint": "person = {'name': 'Alice', 'age': 25, 'city': 'NYC'}; person['email'] = 'alice@email.com'; person['age'] = 26; print(person.get('phone', 'Not found'))"
+  },
+  {
+    "title": "Dictionary Methods and Iteration",
+    "instructions": "Iterate through dictionary keys, values, and items. Use dict.keys(), dict.values(), dict.items() and demonstrate pop() and update() methods.",
+    "hint": "for key in person.keys(): print(key); for value in person.values(): print(value); for key, value in person.items(): print(key, value)"
+  },
+  {
+    "title": "If-Else Statements and Comparison",
+    "instructions": "Write a program that checks if a number is positive, negative, or zero. Also check if it's even or odd. Use if, elif, and else statements.",
+    "hint": "num = int(input('Enter a number: ')); if num > 0: print('Positive'); elif num < 0: print('Negative'); else: print('Zero')"
+  },
+  {
+    "title": "Logical Operators and Complex Conditions",
+    "instructions": "Check if a number is between 10 and 50, or if it's divisible by both 3 and 5. Use and, or, not operators.",
+    "hint": "num = 15; print(10 <= num <= 50); print(num % 3 == 0 and num % 5 == 0)"
+  },
+  {
+    "title": "For Loops with Range",
+    "instructions": "Use for loop with range() to print numbers 1-10, count backwards from 10-1, and print even numbers 2-20.",
+    "hint": "for i in range(1, 11): print(i); for i in range(10, 0, -1): print(i); for i in range(2, 21, 2): print(i)"
+  },
+  {
+    "title": "For Loops with Lists and Strings",
+    "instructions": "Iterate through a list of names and print each with 'Hello' prefix. Also iterate through a string and count vowels.",
+    "hint": "names = ['Alice', 'Bob', 'Charlie']; for name in names: print(f'Hello {name}'); text = 'hello world'; vowels = sum(1 for c in text if c in 'aeiou')"
+  },
+  {
+    "title": "While Loops and Break/Continue",
+    "instructions": "Use while loop to find first number divisible by 7. Use break to exit loop. Also demonstrate continue to skip even numbers.",
+    "hint": "num = 1; while True: if num % 7 == 0: print(num); break; num += 1"
+  },
+  {
+    "title": "Basic Functions - Definition and Call",
+    "instructions": "Define a function greet() that takes a name parameter and returns a greeting string. Call it with different names.",
+    "hint": "def greet(name): return f'Hello, {name}!'; print(greet('Alice')); print(greet('Bob'))"
+  },
+  {
+    "title": "Functions with Multiple Parameters and Default Values",
+    "instructions": "Create a function calculate_area() that takes length and width with default width=1. Also create a function that takes arbitrary arguments using *args.",
+    "hint": "def calculate_area(length, width=1): return length * width; def sum_all(*args): return sum(args)"
+  },
+  {
+    "title": "Lambda Functions and Built-in Functions",
+    "instructions": "Create lambda functions for squaring a number and checking if number is even. Use map() and filter() with these lambdas.",
+    "hint": "square = lambda x: x**2; is_even = lambda x: x % 2 == 0; numbers = [1,2,3,4,5]; squared = list(map(square, numbers)); evens = list(filter(is_even, numbers))"
+  },
+  {
+    "title": "Classes and Objects - Basic Definition",
+    "instructions": "Define a class Person with attributes name and age. Create an object and access its attributes. Add a method introduce() that prints person info.",
+    "hint": "class Person: def __init__(self, name, age): self.name = name; self.age = age; def introduce(self): print(f'I am {self.name}, {self.age} years old')"
+  },
+  {
+    "title": "Inheritance and Method Overriding",
+    "instructions": "Create a Student class that inherits from Person. Add grade attribute and override introduce() method to include grade.",
+    "hint": "class Student(Person): def __init__(self, name, age, grade): super().__init__(name, age); self.grade = grade; def introduce(self): print(f'I am {self.name}, {self.age} years old, grade {self.grade}')"
+  },
+  {
+    "title": "File I/O - Reading and Writing Text Files",
+    "instructions": "Write 'Hello, File!' to a file called 'test.txt'. Then read the file and print its contents. Use with statement for proper file handling.",
+    "hint": "with open('test.txt', 'w') as f: f.write('Hello, File!'); with open('test.txt', 'r') as f: content = f.read(); print(content)"
+  },
+  {
+    "title": "Exception Handling with Try-Except",
+    "instructions": "Write a program that divides two numbers and handles division by zero. Also handle ValueError when converting string to int.",
+    "hint": "try: a = int(input('Enter a: ')); b = int(input('Enter b: ')); result = a / b; print(result); except ZeroDivisionError: print('Cannot divide by zero'); except ValueError: print('Please enter valid numbers')"
+  },
+  {
+    "title": "Modules and Import Statements",
+    "instructions": "Import random module and use randint(), choice(), shuffle(). Import datetime and get current date/time. Import specific functions from math module.",
+    "hint": "import random; import datetime; from math import sqrt, pi; print(random.randint(1, 10)); print(datetime.datetime.now()); print(sqrt(16), pi)"
+  },
+  {
+    "title": "List and Dictionary Comprehensions",
+    "instructions": "Create list comprehension for squares of numbers 1-10. Create dictionary comprehension mapping numbers to their squares. Use conditional comprehension for even numbers only.",
+    "hint": "squares = [x**2 for x in range(1, 11)]; square_dict = {x: x**2 for x in range(1, 6)}; even_squares = [x**2 for x in range(1, 11) if x % 2 == 0]"
+  },
+  {
+    "title": "Decorators - Basic Function Decorator",
+    "instructions": "Create a decorator that prints function name before execution. Apply it to a simple function. Use @decorator syntax.",
+    "hint": "def log_function(func): def wrapper(*args, **kwargs): print(f'Calling {func.__name__}'); return func(*args, **kwargs); return wrapper; @log_function; def greet(name): print(f'Hello {name}')"
+  },
+  {
+    "title": "Generators and Yield Statement",
+    "instructions": "Create a generator function that yields Fibonacci numbers. Use it in a for loop to print first 10 Fibonacci numbers.",
+    "hint": "def fibonacci(): a, b = 0, 1; while True: yield a; a, b = b, a + b; fib = fibonacci(); for i, num in enumerate(fib): if i >= 10: break; print(num)"
+  },
+  {
+    "title": "Context Managers and With Statement",
+    "instructions": "Create a custom context manager class that measures execution time. Use it to time a simple operation.",
+    "hint": "import time; class Timer: def __enter__(self): self.start = time.time(); return self; def __exit__(self, *args): self.end = time.time(); print(f'Time: {self.end - self.start}'); with Timer(): time.sleep(1)"
+  },
+  {
+    "title": "Advanced: Property Decorators",
+    "instructions": "Create a class with private attribute and property decorator for getter/setter. Demonstrate encapsulation.",
+    "hint": "class Circle: def __init__(self, radius): self._radius = radius; @property; def radius(self): return self._radius; @radius.setter; def radius(self, value): if value < 0: raise ValueError('Radius cannot be negative'); self._radius = value"
+  },
+  {
+    "title": "Advanced: Class Methods and Static Methods",
+    "instructions": "Create a class with @classmethod and @staticmethod decorators. Demonstrate when to use each.",
+    "hint": "class Date: def __init__(self, year, month, day): self.year = year; self.month = month; self.day = day; @classmethod; def from_string(cls, date_string): year, month, day = map(int, date_string.split('-')); return cls(year, month, day); @staticmethod; def is_valid_date(date_string): try: year, month, day = map(int, date_string.split('-')); return 1 <= month <= 12 and 1 <= day <= 31; except: return False"
+  },
+  {
+    "title": "Advanced: Metaclasses and Class Creation",
+    "instructions": "Create a metaclass that adds a 'created_by' attribute to all classes. Demonstrate metaclass usage.",
+    "hint": "class Meta(type): def __new__(cls, name, bases, attrs): attrs['created_by'] = 'Python Learner'; return super().__new__(cls, name, bases, attrs); class MyClass(metaclass=Meta): pass; print(MyClass.created_by)"
+  },
+  {
+    "title": "Advanced: Descriptors",
+    "instructions": "Create a descriptor class that validates integer values. Use it in a class to ensure age is positive.",
+    "hint": "class PositiveInteger: def __init__(self): self._name = None; def __get__(self, instance, owner): return instance.__dict__.get(self._name); def __set__(self, instance, value): if not isinstance(value, int) or value < 0: raise ValueError('Must be positive integer'); instance.__dict__[self._name] = value; def __set_name__(self, owner, name): self._name = name; class Person: age = PositiveInteger()"
+  },
+  {
+    "title": "Advanced: Abstract Base Classes",
+    "instructions": "Create an abstract base class Shape with abstract method area(). Implement it in Circle and Rectangle classes.",
+    "hint": "from abc import ABC, abstractmethod; class Shape(ABC): @abstractmethod; def area(self): pass; class Circle(Shape): def __init__(self, radius): self.radius = radius; def area(self): return 3.14159 * self.radius ** 2"
+  },
+  {
+    "title": "Advanced: Multiple Inheritance and Method Resolution Order",
+    "instructions": "Create classes A, B, C where C inherits from both A and B. Demonstrate method resolution order (MRO).",
+    "hint": "class A: def method(self): return 'A'; class B: def method(self): return 'B'; class C(A, B): pass; print(C.__mro__); c = C(); print(c.method())"
+  },
+  {
+    "title": "Advanced: Contextlib and Context Managers",
+    "instructions": "Use contextlib.contextmanager decorator to create a context manager. Create one that temporarily changes working directory.",
+    "hint": "from contextlib import contextmanager; import os; @contextmanager; def change_dir(path): old_dir = os.getcwd(); os.chdir(path); yield; os.chdir(old_dir); with change_dir('/tmp'): print(os.getcwd())"
+  },
+  {
+    "title": "Advanced: Iterators and Custom Iterables",
+    "instructions": "Create a custom iterator class that yields numbers in a range. Implement __iter__ and __next__ methods.",
+    "hint": "class NumberRange: def __init__(self, start, end): self.start = start; self.end = end; self.current = start; def __iter__(self): return self; def __next__(self): if self.current >= self.end: raise StopIteration; result = self.current; self.current += 1; return result"
+  },
+  {
+    "title": "Advanced: Function Annotations and Type Hints",
+    "instructions": "Create functions with type hints for parameters and return values. Use typing module for complex types.",
+    "hint": "from typing import List, Dict, Optional; def process_numbers(numbers: List[int]) -> int: return sum(numbers); def get_user_info(user_id: int) -> Optional[Dict[str, str]]: return {'name': 'Alice', 'email': 'alice@email.com'}"
+  },
+  {
+    "title": "Advanced: Dataclasses and Named Tuples",
+    "instructions": "Create a dataclass for Point with x, y coordinates. Also create a named tuple for RGB color. Compare their usage.",
+    "hint": "from dataclasses import dataclass; from collections import namedtuple; @dataclass; class Point: x: int; y: int; Color = namedtuple('Color', ['red', 'green', 'blue']); point = Point(3, 4); color = Color(255, 0, 0)"
+  },
+  {
+    "title": "Advanced: Async/Await Basics",
+    "instructions": "Create an async function that simulates a delay and prints a message. Use asyncio to run it.",
+    "hint": "import asyncio; async def delayed_print(message, delay): await asyncio.sleep(delay); print(message); asyncio.run(delayed_print('Hello from async!', 1))"
+  },
+  {
+    "title": "Advanced: Regular Expressions",
+    "instructions": "Use re module to find all email addresses in a text. Also validate if a string is a valid email format.",
+    "hint": "import re; text = 'Contact us at alice@email.com or bob@company.org'; emails = re.findall(r'\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}\\b', text); pattern = re.compile(r'^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}$'); is_valid = pattern.match('test@email.com')"
+  },
+  {
+    "title": "Advanced: JSON and Data Serialization",
+    "instructions": "Create a dictionary and serialize it to JSON string. Then deserialize it back to dictionary. Handle custom objects with custom encoder.",
+    "hint": "import json; data = {'name': 'Alice', 'age': 25, 'city': 'NYC'}; json_str = json.dumps(data); parsed_data = json.loads(json_str); print(json_str); print(parsed_data)"
+  },
+  {
+    "title": "Advanced: Pickle for Object Serialization",
+    "instructions": "Create a custom class and serialize/deserialize it using pickle. Save to file and load from file.",
+    "hint": "import pickle; class Person: def __init__(self, name, age): self.name = name; self.age = age; person = Person('Alice', 25); with open('person.pkl', 'wb') as f: pickle.dump(person, f); with open('person.pkl', 'rb') as f: loaded_person = pickle.load(f)"
+  },
+  {
+    "title": "Advanced: Threading Basics",
+    "instructions": "Create two threads that print numbers concurrently. Use threading.Thread and demonstrate thread synchronization.",
+    "hint": "import threading; import time; def print_numbers(start, end): for i in range(start, end): print(f'Thread {threading.current_thread().name}: {i}'); time.sleep(0.1); t1 = threading.Thread(target=print_numbers, args=(1, 6)); t2 = threading.Thread(target=print_numbers, args=(6, 11)); t1.start(); t2.start(); t1.join(); t2.join()"
+  },
+  {
+    "title": "Advanced: Multiprocessing",
+    "instructions": "Create a multiprocessing example that calculates squares of numbers in parallel. Use Process and Pool.",
+    "hint": "from multiprocessing import Process, Pool; def square(x): return x ** 2; if __name__ == '__main__': with Pool(4) as p: result = p.map(square, range(10)); print(result)"
+  },
+  {
+    "title": "Advanced: Unit Testing with unittest",
+    "instructions": "Create a simple function and write unit tests for it using unittest framework. Test different scenarios including edge cases.",
+    "hint": "import unittest; def add(a, b): return a + b; class TestAdd(unittest.TestCase): def test_add_positive(self): self.assertEqual(add(2, 3), 5); def test_add_negative(self): self.assertEqual(add(-1, -2), -3); def test_add_zero(self): self.assertEqual(add(5, 0), 5); if __name__ == '__main__': unittest.main()"
+  },
+  {
+    "title": "Advanced: Logging Configuration",
+    "instructions": "Configure logging with different levels (DEBUG, INFO, WARNING, ERROR). Create custom formatter and log to both file and console.",
+    "hint": "import logging; logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', handlers=[logging.FileHandler('app.log'), logging.StreamHandler()]); logging.debug('Debug message'); logging.info('Info message'); logging.warning('Warning message'); logging.error('Error message')"
+  },
+  {
+    "title": "Advanced: Custom Exceptions",
+    "instructions": "Create custom exception classes for specific error types. Inherit from Exception and add custom attributes.",
+    "hint": "class ValidationError(Exception): def __init__(self, message, field=None): super().__init__(message); self.field = field; class AgeError(ValidationError): pass; try: age = -5; if age < 0: raise AgeError('Age cannot be negative', 'age'); except AgeError as e: print(f'Error in {e.field}: {e}')"
+  },
+  {
+    "title": "Advanced: Function Decorators with Arguments",
+    "instructions": "Create a decorator that takes arguments. Use it to retry a function multiple times on failure.",
+    "hint": "def retry(max_attempts): def decorator(func): def wrapper(*args, **kwargs): for attempt in range(max_attempts): try: return func(*args, **kwargs); except Exception as e: if attempt == max_attempts - 1: raise e; print(f'Attempt {attempt + 1} failed, retrying...'); return wrapper; return decorator; @retry(3); def unreliable_function(): import random; if random.random() < 0.7: raise ValueError('Random failure'); return 'Success'"
+  },
+  {
+    "title": "Advanced: Metaprogramming with exec and eval",
+    "instructions": "Use exec() to execute dynamic code and eval() to evaluate expressions. Demonstrate code generation.",
+    "hint": "code = 'x = 10; y = 20; print(x + y)'; exec(code); expression = '2 * 3 + 4'; result = eval(expression); print(result)"
+  },
+  {
+    "title": "Advanced: Monkey Patching",
+    "instructions": "Dynamically add methods to existing classes at runtime. Modify built-in types or custom classes.",
+    "hint": "class MyClass: pass; def new_method(self): return 'This is a dynamically added method'; MyClass.dynamic_method = new_method; obj = MyClass(); print(obj.dynamic_method())"
+  },
+  {
+    "title": "Advanced: Memory Management and Garbage Collection",
+    "instructions": "Demonstrate object lifecycle and garbage collection. Use weak references and demonstrate circular references.",
+    "hint": "import weakref; import gc; class Node: def __init__(self, value): self.value = value; self.ref = None; node1 = Node(1); node2 = Node(2); node1.ref = weakref.ref(node2); node2.ref = weakref.ref(node1); del node1; del node2; gc.collect()"
+  },
+  {
+    "title": "Advanced: Performance Optimization",
+    "instructions": "Use cProfile to profile code performance. Optimize a slow function using different techniques.",
+    "hint": "import cProfile; import pstats; def slow_function(): return sum(i**2 for i in range(10000)); profiler = cProfile.Profile(); profiler.enable(); slow_function(); profiler.disable(); stats = pstats.Stats(profiler); stats.sort_stats('cumulative'); stats.print_stats()"
+  }
+]

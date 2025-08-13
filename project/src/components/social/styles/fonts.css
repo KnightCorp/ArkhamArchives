@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Special Elite';
+  src: url('https://fonts.gstatic.com/s/specialelite/v18/XLYgIZbkc4JPUL5CVArUVL0ntnAOSA.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.detective-text {
+  font-family: 'Special Elite', monospace;
+  letter-spacing: 0.5px;
+}

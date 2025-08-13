@@ -1,0 +1,132 @@
+[
+  {
+    "fileUrl": "http://localhost:8000/lms/public/notes/Demo Teacher_LLM_849e63a2-cc6f-4e24-a4bc-c48453362104.pdf",
+    "fileName": "Demo Teacher_LLM_849e63a2-cc6f-4e24-a4bc-c48453362104.pdf",
+    "instructions": "give 2 questions on what is llm",
+    "quiz": [
+      {
+        "question": "What does LLM stand for in the context of artificial intelligence?",
+        "options": [
+          "Large Language Model",
+          "Long Learning Machine",
+          "Linguistic Learning Module",
+          "Logical Language Mechanism"
+        ],
+        "answer": "Large Language Model"
+      },
+      {
+        "question": "What is a primary function of an LLM?",
+        "options": [
+          "Generating human-like text based on input prompts",
+          "Performing complex mathematical calculations",
+          "Creating visual art and graphics",
+          "Managing database storage systems"
+        ],
+        "answer": "Generating human-like text based on input prompts"
+      }
+    ],
+    "classId": "a326a94f-f2bb-45ba-b159-706daf5b86e7",
+    "className": "LLM",
+    "id": "1907998e-59e9-40e8-8d47-fb9731a1c9e9",
+    "created_at": "2025-07-18T17:46:58.848435"
+  },
+  {
+    "fileUrl": "http://localhost:8000/lms/public/notes/Demo Teacher_ml_7ab0b56d-33da-4cf9-8410-9d4420072e39.pdf",
+    "fileName": "Demo Teacher_ml_7ab0b56d-33da-4cf9-8410-9d4420072e39.pdf",
+    "instructions": "generate two ml questions",
+    "quiz": [
+      {
+        "question": "What is the primary file format of the provided content?",
+        "options": [
+          "PDF",
+          "JPEG",
+          "TXT",
+          "CSV"
+        ],
+        "correct_answer": "PDF",
+        "explanation": "The content starts with '%PDF-1.4', which is the signature of a PDF file."
+      },
+      {
+        "question": "What type of object is referenced in the first object of the PDF content?",
+        "options": [
+          "Page",
+          "Font",
+          "Image",
+          "Table"
+        ],
+        "correct_answer": "Page",
+        "explanation": "The first object has '/Type /Page', indicating it is a page object in the PDF."
+      }
+    ],
+    "classId": "07eb43a3-fa89-46c6-aa76-9b57d90031c5",
+    "className": "ml",
+    "id": "5a8dd908-a3e7-462d-abd4-0e5609b34b6b",
+    "created_at": "2025-07-19T05:35:23.877716"
+  },
+  {
+    "fileName": "Generated Quiz",
+    "instructions": "generate two law question",
+    "quiz": [
+      {
+        "question": "What is the principle of 'stare decisis' in common law?",
+        "options": [
+          "To overturn previous court decisions",
+          "To follow precedent set by earlier decisions",
+          "To ignore judicial rulings",
+          "To create new laws without reference to past cases"
+        ],
+        "correct_answer": "To follow precedent set by earlier decisions",
+        "explanation": "Stare decisis ensures consistency and predictability in the law by adhering to prior rulings."
+      },
+      {
+        "question": "Which amendment to the U.S. Constitution guarantees the right to free speech?",
+        "options": [
+          "First Amendment",
+          "Second Amendment",
+          "Fourth Amendment",
+          "Fifth Amendment"
+        ],
+        "correct_answer": "First Amendment",
+        "explanation": "The First Amendment protects freedoms concerning religion, expression, assembly, and the right to petition."
+      }
+    ],
+    "classId": "2e997a3e-b2b8-4c09-aaae-494414d561db",
+    "className": "wdd",
+    "teacherId": "62440ae3-f3f1-4665-8d0c-b0dab46b12e5",
+    "id": "e74ed53b-fb09-4510-98e0-321557125ccb",
+    "created_at": "2025-07-19T05:52:16.744980"
+  },
+  {
+    "fileName": "Generated Quiz",
+    "instructions": "generate two dl questions",
+    "quiz": [
+      {
+        "question": "What is the primary function of a deep learning model?",
+        "options": [
+          "To perform complex pattern recognition",
+          "To execute low-level hardware operations",
+          "To manage database queries",
+          "To design user interfaces"
+        ],
+        "correct_answer": "To perform complex pattern recognition",
+        "explanation": "Deep learning models excel at identifying patterns in large datasets, such as images, text, or audio."
+      },
+      {
+        "question": "Which of the following is a common activation function used in neural networks?",
+        "options": [
+          "ReLU (Rectified Linear Unit)",
+          "Sigmoid",
+          "Tanh",
+          "All of the above"
+        ],
+        "correct_answer": "All of the above",
+        "explanation": "ReLU, Sigmoid, and Tanh are all widely used activation functions in neural networks."
+      }
+    ],
+    "classId": "43e7c158-167d-415f-b71a-694736c62c9f",
+    "className": "deep learning",
+    "teacherId": "62440ae3-f3f1-4665-8d0c-b0dab46b12e5",
+    "id": "a24e3cf2-fb3f-4f84-afd6-83eb665f70d0",
+    "created_at": "2025-07-19T05:55:21.099370"
+  }
+]

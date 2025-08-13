@@ -1,0 +1,32 @@
+[
+  {
+    "quiz_id": "2fd2e3ea-fc36-4fc5-8b7d-e170a36f2a2b",
+    "class_id": "a326a94f-f2bb-45ba-b159-706daf5b86e7",
+    "assigned_at": "2025-07-18T17:04:47.010701"
+  },
+  {
+    "quiz_id": "54e0d590-7877-467c-a8f0-f912bd785ea5",
+    "class_id": "a326a94f-f2bb-45ba-b159-706daf5b86e7",
+    "assigned_at": "2025-07-18T17:04:50.546273"
+  },
+  {
+    "quiz_id": "1907998e-59e9-40e8-8d47-fb9731a1c9e9",
+    "class_id": "a326a94f-f2bb-45ba-b159-706daf5b86e7",
+    "assigned_at": "2025-07-18T17:54:51.632726"
+  },
+  {
+    "quiz_id": "5a8dd908-a3e7-462d-abd4-0e5609b34b6b",
+    "class_id": "07eb43a3-fa89-46c6-aa76-9b57d90031c5",
+    "assigned_at": "2025-07-19T05:36:44.816901"
+  },
+  {
+    "quiz_id": "e74ed53b-fb09-4510-98e0-321557125ccb",
+    "class_id": "2e997a3e-b2b8-4c09-aaae-494414d561db",
+    "assigned_at": "2025-07-19T05:53:33.360200"
+  },
+  {
+    "quiz_id": "a24e3cf2-fb3f-4f84-afd6-83eb665f70d0",
+    "class_id": "43e7c158-167d-415f-b71a-694736c62c9f",
+    "assigned_at": "2025-07-19T05:55:52.243312"
+  }
+]
