@@ -3,12 +3,25 @@
   command = "cd project && npm run build"
 
 [build.environment]
-  # You can add environment variables here if needed
+  # Add any environment variables here if needed
+  # NODE_VERSION = "18"
 
-# Optional: You can add redirects, headers, or other configurations
 [build.processing]
   skip_processing = true
 
-# Optional: You can add functions configuration if needed
+# If you're using Netlify Functions, add this section
 [functions]
   directory = "project/functions"
+
+# If you need redirects, add them like this:
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# If you need headers, add them like this:
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
