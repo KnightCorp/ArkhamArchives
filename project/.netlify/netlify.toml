@@ -1,28 +1,14 @@
-plugins = []
-headers = []
-redirects = []
-
-[functions]
-
-[functions."*"]
-
 [build]
-publish = "C:\\Users\\raksh\\Desktop\\Arkham\\project\\dist"
-publishOrigin = "ui"
-commandOrigin = "ui"
-base = "C:\\Users\\raksh\\Desktop\\Arkham\\project"
-command = "npm run build"
+  publish = "project/dist"
+  command = "cd project && npm run build"
 
 [build.environment]
+  # You can add environment variables here if needed
 
+# Optional: You can add redirects, headers, or other configurations
 [build.processing]
+  skip_processing = true
 
-[build.processing.css]
-
-[build.processing.html]
-
-[build.processing.images]
-
-[build.processing.js]
-
-[build.services]
+# Optional: You can add functions configuration if needed
+[functions]
+  directory = "project/functions"
