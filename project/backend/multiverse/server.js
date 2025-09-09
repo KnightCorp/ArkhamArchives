@@ -3,13 +3,36 @@ import cors from 'cors';
 import fetch from 'node-fetch';
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
-const DEEPSEEK_API_KEY = "sk-074673a2fac04fc7802daafb8a132f55";
-const DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions";
+const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY;
+const DEEPSEEK_API_URL = process.env.DEEPSEEK_API_URL || "https://api.deepseek.com/v1/chat/completions";
 
-app.use(cors());
+// Configure CORS
+const allowedOrigins = [
+  'https://arkhamarchives.netlify.app',  // Your Netlify domain
+  'http://localhost:3000',               // Local development
+  'https://arkhamarchives.com'           // Your custom domain (if any)
+];
+
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
+
+// Handle preflight requests
+app.options('*', cors(corsOptions));
 
 function createStoryPrompt(people, events, style) {
   const eventSummary = events.map(event => 

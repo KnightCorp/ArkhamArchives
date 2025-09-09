@@ -18,9 +18,10 @@ export default defineConfig(({ mode }) => ({
     strictPort: true,
     proxy: {
       "/api": {
-        target: "https://spectrum-api-343916782787.us-central1.run.app",
+        target: "https://arkhamarchives.onrender.com",
         changeOrigin: true,
         rewrite: (path: string) => path.replace(/^\/api/, ""),
+        secure: false
       },
     },
   },
