@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Environment Variables Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; }
+        .success { color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Environment Variables Test</h1>
+    <div id="env-vars">Loading...</div>
+
+    <script type="module">
+        const envVars = {
+            'VITE_SUPABASE_URL': import.meta.env.VITE_SUPABASE_URL,
+            'VITE_SUPABASE_KEY': import.meta.env.VITE_SUPABASE_KEY ? '*** (key exists)' : null,
+            'NODE_ENV': import.meta.env.MODE,
+            'BASE_URL': import.meta.env.BASE_URL
+        };
+
+        const envList = document.getElementById('env-vars');
+        let output = '<h2>Environment Variables:</h2><pre>';
+        
+        for (const [key, value] of Object.entries(envVars)) {
+            const exists = value !== undefined && value !== null;
+            output += `<span class="${exists ? 'success' : 'error'}">${key}: ${exists ? value : '❌ Not Found'}</span>\n`;
+        }
+        
+        output += '\n\nAll Vite env variables:\n';
+        output += JSON.stringify(import.meta.env, null, 2);
+        
+        envList.innerHTML = output + '</pre>';
+    </script>
+</body>
+</html>

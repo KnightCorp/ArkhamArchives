@@ -1,17 +1,14 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 import {
   Compass,
   Film,
   Clock,
-  LayoutDashboard,
   User,
   Users,
-  Store,
   Settings,
-  MessageSquare,
   Rss,
   Coins,
+  Rocket,
   LucideIcon,
 } from "lucide-react";
 import { To } from "react-router-dom";
@@ -40,7 +37,7 @@ const NavItems = ({ isExpanded }: NavItemsProps) => {
     { icon: User, path: "/social/profile", label: "Profile" },
     { icon: Users, path: "/social/referrals", label: "Referrals" },
     { divider: true } as const,
-    // { icon: MessageSquare, path: "/social/messenger", label: "Messenger" },
+    { icon: Rocket, path: "/social/quicklaunch", label: "District" },
     { icon: Coins, path: "/social/subscription", label: "Subscription" },
     { divider: true } as const,
     { icon: Settings, path: "/social/settings", label: "Settings" },

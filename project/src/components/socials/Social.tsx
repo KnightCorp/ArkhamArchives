@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Outlet } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Explore from "./pages/Explore";
 import Store from "./pages/Store";
 import Timeline from "./pages/Timeline";
@@ -11,6 +11,7 @@ import Messenger from "./pages/Messenger";
 import Feed from "./pages/Feed";
 import Subscription from "./pages/Subscription";
 import Referral from "./pages/Referral";
+import QuickLaunch from "../../components/dashboard/QuickLaunch";
 import Layout from "./components/Layout";
 import "./social.css";
 import "./styles/fonts.css";
@@ -32,6 +33,7 @@ const Social: React.FC = () => {
         <Route path="messenger" element={<Messenger />} />
         <Route path="subscription" element={<Subscription />} />
         <Route path="referrals" element={<Referral />} />
+        <Route path="quicklaunch" element={<QuickLaunch />} />
       </Route>
     </Routes>
   );
