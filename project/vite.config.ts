@@ -6,6 +6,13 @@ import { resolve } from 'path';
 export default defineConfig(({ mode }) => ({
   base: mode === 'production' ? '/' : '/',
   plugins: [react()],
+  resolve: {
+    dedupe: ['react', 'react-dom'],
+    alias: {
+      react: resolve(__dirname, 'node_modules/react'),
+      'react-dom': resolve(__dirname, 'node_modules/react-dom')
+    }
+  },
   server: {
     port: 3000,
     strictPort: true,
@@ -18,6 +25,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   optimizeDeps: {
+    include: ['react', 'react-dom'],
     exclude: ["lucide-react"],
   },
   build: {
@@ -39,7 +47,8 @@ export default defineConfig(({ mode }) => ({
       output: {
         manualChunks: (id: string) => {
           if (id.includes('node_modules')) {
-            if (id.includes('react') && id.includes('react-dom')) {
+            // Group React and ReactDOM together
+            if (id.includes('react') || id.includes('react-dom')) {
               return 'react-vendor';
             }
             if (id.includes('react-router')) {
@@ -48,10 +57,10 @@ export default defineConfig(({ mode }) => ({
             if (id.includes('@supabase')) {
               return 'supabase';
             }
-            if (id.includes('lucide-react') || id.includes('react-hot-toast') || id.includes('clsx')) {
+            if (id.includes('lucide-react') || id.includes('react-hot-toast')) {
               return 'ui-libs';
             }
-            if (id.includes('react-markdown') || id.includes('prism-react-renderer') || id.includes('sucrase') || id.includes('react-live')) {
+            if (id.includes('react-markdown') || id.includes('prism-react-renderer') || id.includes('react-live')) {
               return 'markdown';
             }
             if (id.includes('axios') || id.includes('date-fns') || id.includes('zustand')) {
@@ -71,6 +80,6 @@ export default defineConfig(({ mode }) => ({
         assetFileNames: 'assets/[name]-[hash][extname]',
       },
     },
-    chunkSizeWarningLimit: 1000,
+    chunkSizeWarningLimit: 1500,
   },
 }));
